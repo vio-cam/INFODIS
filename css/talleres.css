@@ -1,0 +1,90 @@
+/*font: playfair display */ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*font: poppins*/ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font: inter*/@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*font: montserrat*/@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color: #5eaff5;
+    --secondary-color: #f5e2be;
+    --dark-blue: #264773;
+    --dark-green: #043A40;
+    --light-gray: #F2F2F2;
+    --soft-black:#0f0c0c; 
+}
+h1, h2, h3 {
+    font-family: 'playfair display', serif; /* Fuente para títulos */
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+body {
+    font-family: poppins, inter;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 0;
+    line-height: 1.6;
+}
+.cuadros{
+    margin-top: 70px;
+}
+.cuadros > div{
+    border: 5px solid var(--light-gray);
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.capacitar img, .taller img {
+    height: 450px;
+    width: 600px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.parrafo {
+    border: none;
+}
+.capacitar, .taller {
+    height: auto;
+    /*display: flex;
+    flex: row;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--dark-green); /* turqueza */
+    color: var(--light-gray);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+.parrafo2{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.capacitar img, .taller img{
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.taller img:hover, .capacitar img:hover{
+    transform: scale(1.1) translateY(-5px); /* Aumenta tamaño y sube */
+}

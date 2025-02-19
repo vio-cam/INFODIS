@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/servicios.css">
+</head>
+<body>
+    <header class="navegador">
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                  <a href="../index.html"><img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" class="logo-infodis"></a>
+                  <li>
+                    <a href="#">Recursos</a>
+                    <ul> 
+                      <li><a href="instituciones.html">Instituciones</a></li>
+                      <li><a href="#">Agenda</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul> 
+                      <li><a href="talleres.html">Capacitaciones</a></li>
+                      <li><a href="talleres.html">Denuncias y quejas</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="noticias.html">Noticias</a></li>
+                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#">Cuenta</a></li>
+                </ul>
+            </nav>
+          </div> 
+      </header>
+
+
+    <div class="general">
+        <div class="main_content">
+            <div class="info">
+                <h1>Nuestros servicios para personas con diversidad funcional</h1>
+                <div class="descripcion">
+                    <p>Ponemos a tu disposición servicios especializados con lugares accesibles e información actualizada sobre capacitaciones, cursos y denuncias.
+                    <br>Juntos construimos un entorno accesible y lleno de oportunidades
+                    </p>
+                </div>  
+            </div>
+        </div>
+        <div class="second_container">
+            <h2 class="frase"><u>Te invito a explorar nuestros servicios</u></h2>
+            <div class="servicios">
+            
+                <div class="card">
+                    <img src="../assets/img/formacion.jpg" alt="Imagen 2">
+                    <div class="card-content">
+                            <h3>Capacitaciones</h3>
+                            <p>Infodis Perú ofrece cursos de formación en teletrabajo.</p>
+                        <div class="button"><a href="../html/talleres.html">→</a></div>
+    
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="../assets/img/denuncias_anonimas.jpg" alt="Imagen 3">
+                    <div class="card-content">
+                            <h3>Denuncias y quejas</h3>
+                            <p>🚨 ¡Tu voz importa!</p>
+                        <div class="button" id="openPanel">→</div>
+
+                        <div class="side-panel" id="sidePanel">
+                            <div class="close-btn" id="closePanel">✖</div>
+                            <div class="form-container">
+                                <h2>DENUNCIAS Y QUEJAS - INFODIS PERÚ</h2>
+                                <p>Si deseas presentar una denuncia, puedes hacerlo a través de este formulario.</p>
+                                <form action="procesar.php" method="POST">
+                                    <label for="nombre">Nombre y apellidos:</label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                                
+                                    <label for="dni">DNI</label>
+                                    <input type="number" id="dni" name="dni" required>
+                    
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="tel" name="tel" required>
+                    
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                    
+                                    <label for="mensaje">Motivo de la denuncia</label>
+                                    <textarea id="mensaje" name="mensaje" required></textarea>
+                                
+                                    <button class="send-btn">Enviar</button>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <!---->
+    
+    
+    <script src="../js/ser2version.js"></script>
+</body>
+</html>

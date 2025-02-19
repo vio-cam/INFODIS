@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituciones</title>
+    <link rel="stylesheet" href="../css/instituciones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body> 
+    <header class="navegador">
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                  <a href="../index.html"><img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" class="logo-infodis"></a>
+                  <li>
+                    <a href="#">Recursos</a>
+                    <ul> 
+                      <li><a href="instituciones.html">Instituciones</a></li>
+                      <li><a href="#">Agenda</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul> 
+                      <li><a href="talleres.html">Capacitaciones</a></li>
+                      <li><a href="talleres.html">Denuncias y quejas</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="noticias.html">Noticias</a></li>
+                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#">Cuenta</a></li>
+                </ul>
+            </nav>
+          </div> 
+      </header>
+
+    <div class="contenido">
+        <div class="info">
+            <h1>🌍 Directorio de Instituciones</h1>
+            <p>Encuentra fácilmente instituciones que brindan servicios a personas con discapacidad. La información está organizada por categorías:</p>
+    
+            <ul>
+                <li>✅ <strong>OMAPED</strong>: Oficinas Municipales de Atención</li>
+                <li>✅ <strong>Salud</strong>: Centros de rehabilitación, hospitales, clínicas</li>
+                <li>✅ <strong>Educación</strong>: Nidos, colegios, academias, universidades</li>
+                <li>✅ <strong>Cultura y Entretenimiento</strong>: Cines, teatros, museos</li>
+                <li>✅ <strong>Comercio</strong>: Supermercados, tiendas, restaurantes</li>
+                <li>✅ <strong>Gobierno</strong>: Ministerios, municipalidades, universidades estatales</li>
+            </ul>
+    
+            <h2>💌 ¿Conoces una institución que debería estar aquí?</h2>
+            <p>Envíanos los datos a <a href="mailto:infodis@fundades.org">infodis@fundades.org</a> y la evaluaremos para añadirla.</p>
+        </div>
+    
+        <div class="imagen">
+            <img src="../assets/img/inst3.jpg" alt="Directorio de Instituciones">
+        </div>
+    </div>
+    
+
+
+    <div class="contenedor-filtro">
+        <form id="formulario-filtro-ingredientes">
+            <div>
+                <label for="input-nombre">Nombre:</label>
+                <input type="text" id="input-nombres" placeholder="Ingresa el nombre" />
+            </div>
+
+            <div>
+                <label for="tipo">Tipo de institución:</label>
+                <select id="tipo">
+                    <option value="">Ninguno</option>
+                    <option value="omaped">Omaped</option>
+                    <option value="salud">Salud</option>
+                    <option value="educativa">Educativa</option>
+                    <option value="estatal">Estatal</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="departamento">Departamento:</label>
+                <select id="departamento">
+                    <option value="">Ninguno</option>
+                    <option value="lima region">Lima Región</option>
+                    <option value="callao">Callao</option>
+                    <option value="amazonas">Amazonas</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="provincia">Provincia</label>
+                <select id="provincia">
+                    <option value="">Ninguno</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="distrito">Distrito:</label>
+                <select id="distrito">
+                    <option value="">Ninguno</option>
+                </select>
+            </div>
+
+
+            <button type="button" onclick="buscarInstitucion()">Buscar</button>
+        </form>
+    </div>
+
+    <div class="instrucciones-filtro">
+        <h2>Instrucciones para usar el filtro</h2>
+        <p>Utiliza el siguiente formulario para buscar la institucion segun::</p>
+        <ul>
+            <li>Nombre</li>
+            <li>Tipo de institución</li>
+            <li>Departamento</li>
+        </ul>
+        <p>Completa los campos según tus preferencias y haz clic en "Buscar" para ver los instituciones que coincidan con tu búsqueda.</p>
+    </div>
+    
+    <main id="main-content" class="main-content">
+        <section id="instituciones" class="alimentos-section">
+            <div class="card-container" id="card-container">
+                <!-- cards  -->
+            </div>
+        </section>
+    </main>
+
+   
+    <footer id="main-footer" class="footer">
+        <div class="container">
+            <p>&copy; Todos los derechos reservados a Hack Her</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+        crossorigin="anonymous"></script>
+    <script src="../js/instituciones.js"></script>
+</body>
+
+</html>

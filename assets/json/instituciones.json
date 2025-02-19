@@ -1,0 +1,106 @@
+{
+    "omaped" : [
+        {
+          "nombre": "OMAPED MUNICIPALIDAD DE ANCON",
+          "telefono": "5522046 / 5522432",
+          "direccion": "Malecon Ferreyros 376 Ancón , Provincia de Lima, Provincia de Lima - Perú",
+          "correo": "mesadepartesvirtual@muniancon.gob.pe",
+          "sitio web": "https://www.gob.pe/muniancon",
+          "area de atencion": "PCD",
+          "departamento": "LIMA REGION",
+          "provincia": "Lima",
+          "distrito": "Los Olivos",
+          "fecha de registro": "13-01-2023 18:42:09PM",
+          "ultima actualizacion": "21-02-2023 12:59:21PM"
+        },
+        {
+          "nombre": "OMAPED MUNICIPALIDAD DE LIMA",
+          "telefono": "5522046 / 5522432",
+          "direccion": "Malecon Ferreyros 376 Ancón , Provincia de Lima, Provincia de Lima - Perú",
+          "correo": "mesadepartesvirtual@muniancon.gob.pe",
+          "sitio web": "https://www.gob.pe/muniancon",
+          "area de atencion": "PCD",
+          "departamento": "LIMA REGION",
+          "provincia": "Lima",
+          "distrito": "Ancon",
+          "fecha de registro": "13-01-2023 18:42:09PM",
+          "ultima actualizacion": "21-02-2023 12:59:21PM"
+  
+        }
+      ] , 
+    "estatal":  [
+      {
+        "nombre": "Espinaca",
+        "telefono": "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_640.jpg",
+        "direccion": 3.5,
+        "correo": 2.9,
+        "sitio web": 0.4,
+        "area de atencion": 0.4,
+        "departamento": "LIMA REGION",
+        "provincia": "Huaral",
+        "distrito": "Miraflores",
+        "fecha de registro": 0.4,
+        "ultima actualizacion": 0.4
+
+      },
+      {
+        "nombre": "Espinaca",
+        "telefono": "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_640.jpg",
+        "direccion": 3.5,
+        "correo": 2.9,
+        "sitio web": 0.4,
+        "area de atencion": 0.4,
+        "departamento": "LIMA REGION",
+        "provincia": "Huaral",
+        "distrito": "San Isidro",
+        "fecha de registro": 0.4,
+        "ultima actualizacion": 0.4
+
+      }
+    ], 
+    "salud":  [
+      {
+        "nombre": "CENTRO DE SALUD MENTAL COMUNITARIO RIJCHARIY (DESPIERTA)",
+        "telefono": "7613936",
+        "direccion": "Av. Los arquitectos cdra. 33 Mz. G8 Lt. 02",
+        "correo": "---",
+        "sitio web": "https://www.facebook.com/CSMC.RIJCHARIY",
+        "area de atencion": "---",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "Ancon",
+        "fecha de registro": "04-10-2024 11:09:07AM",
+        "ultima actualizacion": "04-10-2024 11:09:07AM"
+
+      },
+      
+      {
+        "nombre": "EITA: MUJERES AUTISTAS",
+        "telefono": "977 933 519",
+        "direccion": "San Fernando 494, Miraflores, Lima - Perú",
+        "correo": "mujeresautistas@eita.pe",
+        "sitio web": "https://eita.pe/mujeres-autistas/",
+        "area de atencion": "---",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "Miraflores",
+        "fecha de registro": "31-01-2023 15:17:48PM",
+        "ultima actualizacion": "31-01-2023 15:17:48PM"
+
+      },
+      {
+        "nombre": "Espinaca",
+        "telefono": "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_640.jpg",
+        "direccion": 3.5,
+        "correo": 2.9,
+        "sitio web": 0.4,
+        "area de atencion": 0.4,
+        "departamento": "Callao",
+        "provincia": "Huaral",
+        "distrito": "San Miguel",
+        "fecha de registro": 0.4,
+        "ultima actualizacion": 0.4
+
+      }
+    ] 
+}

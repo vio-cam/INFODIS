@@ -1,0 +1,473 @@
+
+.navegador {
+    margin-bottom: 70px; /* Espacio entre el navbar y el contenido */
+}
+
+header.navegador {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+/* Sombra cuando el usuario baja */
+header.navegador.scrolled {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #d1eef2; /* Un poco más oscuro para dar efecto de profundidad */
+}
+  
+  .logo-infodis{
+    background-color: #ffff;
+    position: relative;
+    height: 60px;
+    width: auto;
+    margin-left: 30px;
+  }
+  
+  .nav-bar nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-bar nav ul li {
+    position: relative;
+    padding: 10px 20px;
+    color: #ffffff;
+  }
+  
+  .nav-bar nav ul li a {
+    color: #00485e; /* Azul oscuro */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-bar nav ul li:hover {
+    background-color: #00485e1a; /* Un tono más claro al pasar el mouse */
+}
+  
+  .nav-bar nav ul li > a {
+    font-weight: bold;
+  }
+  
+  /* Submenú */
+  .nav-bar nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+    min-width: 150px;
+  }
+  
+  .nav-bar nav ul li:hover > ul {
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .nav-bar nav ul li ul li {
+    padding: 10px;
+  }
+  
+  .nav-bar nav ul li ul li a {
+    color: #00485e;
+  }
+  
+  .nav-bar nav ul li ul li a:hover {
+    background-color: #00485e1a;
+  }
+
+/* Estilos del contenedor */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+
+
+body {
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.header-logo {
+    height: 50px; /* Ajusta el tamaño según tu necesidad */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+.header-title {
+    font-size: 24px; 
+    margin: 0; 
+    color: #3d1f0e;
+}
+
+
+
+
+
+
+h2, p{
+    color: #3d1f0e;
+}
+
+
+label{
+    font-weight: bold;
+}
+
+
+.contenido {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra los elementos */
+    gap: 40px; /* Reduce la separación entre texto e imagen */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+}
+
+.info {
+    flex: 1; /* Ocupará el espacio disponible */
+    max-width: 600px;
+}
+
+.imagen {
+    flex: 1; /* Ocupará el espacio disponible */
+    max-width: 50%; /* Permite que la imagen sea más grande */
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Ajusta la altura sin distorsionar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* Evita que se deforme */
+}
+
+.imagen img:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background-color: #e68a00;
+}
+
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen {
+        max-width: 80%; 
+    }
+}
+
+
+
+.contenedor-filtro {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #e7dc77;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-filtro-ingredientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#formulario-filtro-ingredientes div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+#formulario-filtro-ingredientes label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#formulario-filtro-ingredientes input,
+#formulario-filtro-ingredientes select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 220px;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#formulario-filtro-ingredientes input:focus,
+#formulario-filtro-ingredientes select:focus {
+    border-color: #d6dd71;
+    outline: none;
+}
+
+#formulario-filtro-ingredientes button {
+    padding: 12px 25px;
+    background-color: #afa22d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#formulario-filtro-ingredientes button:hover {
+    background-color: #a7551b;
+}
+
+#formulario-filtro-ingredientes button:active {
+    background-color: #8a4c1b;
+}
+
+
+
+
+
+.main-content {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px); /* 4 tarjetas por fila */
+    max-width: 350px; /* Controla el ancho máximo de las tarjetas */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+img {
+    width: 1177.8px;
+    height: 118.61px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    margin: 10px 0;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex: 1 1 100%; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.instrucciones-filtro {
+    background-color: #F9ECC9; /* Fondo claro */
+    border: 1px solid #fff; /* Borde suave */
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 12px;
+    font-family: 'Questrial', sans-serif;
+    color: #333; /* Texto oscuro */
+    max-width: 400px; /* Tamaño más pequeño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    text-align: center; /* Centrar texto */
+    position: relative; /* Posición relativa para animaciones futuras */
+}
+
+.instrucciones-filtro h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ddd784; /* Color destacado para el título */
+    text-align: center;
+}
+
+.instrucciones-filtro p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.instrucciones-filtro ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.instrucciones-filtro ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.instrucciones-filtro ul li:before {
+    content: '•'; /* Personalizar viñeta */
+    color: #eedc39; /* Color de viñeta */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.instrucciones-filtro {
+    animation: fadeIn 0.5s ease-in-out; /* Animación al aparecer */
+}
+
+
+
+
+/*FOOTER*/
+
+.main-content {
+    flex: 1; /* Esto asegura que el contenido principal ocupe todo el espacio disponible */
+}
+
+.footer {
+    background-color: #435983;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Hace que el footer se mantenga al fondo */
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    color: #2b1609;
+    text-decoration: none;
+}
+
+#formulario-filtro-recetas button:hover {
+    background-color: #3d1f0e;
+}
+
+#instrucciones {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#instrucciones img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
