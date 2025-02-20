@@ -1,5 +1,6 @@
 [
     {
+        "idArticulo": "articulo_1",
         "filtro": "articulos",
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
@@ -23,6 +24,7 @@
         }]
     },
     {
+        "idArticulo": "articulo_2",
         "filtro": "articulos",
         "imagen": "../assets/img/post-3.jpg",
         "categoria": "Articulos",
@@ -50,6 +52,7 @@
         }]
     },
     {
+        "idArticulo": "articulo_3",
         "filtro": "articulos",
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
@@ -73,6 +76,7 @@
         }]
     },
     {
+        "idArticulo": "articulo_4",
         "filtro": "articulos",
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
@@ -109,6 +113,7 @@
         }]
     },
     {
+        "idArticulo": "articulo_5",
         "filtro": "articulos",
         "imagen": "../assets/img/post-3.jpg",
         "categoria": "Articulos",
@@ -141,6 +146,7 @@
         }]
     },
     {
+        "idArticulo": "articulo_6",
         "filtro": "articulos",
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
@@ -163,6 +169,7 @@
         }
 ]},
     {
+        "idArticulo": "articulo_7",
         "filtro": "articulos",
         "imagen": "../assets/img/post-3.jpg",
         "categoria": "Articulos",
@@ -188,6 +195,7 @@
         }
 ]},
     {
+        "idArticulo": "articulo_8",
         "filtro": "articulos",
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
@@ -203,6 +211,7 @@
         }
 ]},
     {
+        "idArticulo": "articulo_9",
         "filtro": "articulos",
         "imagen": "../assets/img/post-3.jpg",
         "categoria": "Articulos",
@@ -224,6 +233,7 @@
         }
 ]},
     {
+        "idArticulo": "articulo_10",
         "filtro": "articulos",
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
@@ -318,6 +328,7 @@
         "filtro": "oportunidades"
     },
     {
+        "idArticulo": "articulo_11",
         "filtro": "articulos",
         "imagen": "../assets/img/post-3.jpg",
         "categoria": "Articulos",
@@ -356,6 +367,7 @@
         }
 ]},
 {
+    "idArticulo": "articulo_12",
     "filtro": "articulos",
     "imagen": "../assets/img/post-3.jpg",
     "categoria": "Articulos",

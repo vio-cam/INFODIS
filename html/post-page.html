@@ -21,9 +21,24 @@
 
 <!-- Sección del contenido de la noticia -->
 <section class="post-content post-container" id="post-content">
-    <!-- Aquí se cargará el contenido dinámico -->
+    <!-- Aquí se cargara toda la informacion del articulo -->
+
 </section>
 
+<!-- Sección de comentarios -->
+<section class="post-container">
+    <h3>Comentarios</h3>
+
+    <!-- Espacio donde se mostrarán los comentarios -->
+    <div id="comentarios"></div>
+
+    <!-- Formulario para agregar nuevos comentarios -->
+    <form id="formComentario">
+        <input type="text" id="nombreUsuario" placeholder="Tu nombre" required>
+        <textarea id="mensajeComentario" placeholder="Escribe tu comentario..." required></textarea>
+        <button type="submit">Comentar</button>
+    </form>
+</section>
 
     <!-- Footer -->
     <div class="footer container">
@@ -38,7 +53,7 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="../js/noticas.js"></script>
+    <script type = "module" src="../js/noticas.js"></script>
 
 </body>
 </html>

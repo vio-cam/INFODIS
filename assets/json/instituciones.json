@@ -9,52 +9,77 @@
           "area de atencion": "PCD",
           "departamento": "LIMA REGION",
           "provincia": "Lima",
-          "distrito": "Los Olivos",
+          "distrito": "Ancon",
           "fecha de registro": "13-01-2023 18:42:09PM",
           "ultima actualizacion": "21-02-2023 12:59:21PM"
         },
         {
-          "nombre": "OMAPED MUNICIPALIDAD DE LIMA",
-          "telefono": "5522046 / 5522432",
-          "direccion": "Malecon Ferreyros 376 Ancón , Provincia de Lima, Provincia de Lima - Perú",
-          "correo": "mesadepartesvirtual@muniancon.gob.pe",
-          "sitio web": "https://www.gob.pe/muniancon",
+          "nombre": "OMAPED MUNICIPALIDAD DE BARRANCO",
+          "telefono": "203-6730 / 203-6731 / 203-6732 / 959772956",
+          "direccion": "Av. San Martin S/N LIMA, LIMA, BARRANCO - Perú / Jr. Rodriguez Soto 288",
+          "correo": "omaped@munibarranco.gob.pe",
+          "sitio web": "https://www.gob.pe/munibarranco",
           "area de atencion": "PCD",
           "departamento": "LIMA REGION",
           "provincia": "Lima",
-          "distrito": "Ancon",
-          "fecha de registro": "13-01-2023 18:42:09PM",
-          "ultima actualizacion": "21-02-2023 12:59:21PM"
-  
+          "distrito": "Barranco",
+          "fecha de registro": "14-01-2023 10:23:37AM",
+          "ultima actualizacion": "17-02-2023 14:24:08PM"
+        },
+        {
+          "nombre": "OMAPED MUNICIPALIDAD DE CHORRILLOS",
+          "telefono": "01 6803030",
+          "direccion": "Av. Defensores del Morro Nº 2765 (ex Av.Huaylas) Chorrillos , Provincia de Lima, Departamento de Lima - Perú",
+          "correo": "desarrollosocial@munichorrillos.gob.pe",
+          "sitio web": "https://www.gob.pe/munichorrillos",
+          "area de atencion": "PCD",
+          "departamento": "LIMA REGION",
+          "provincia": "Lima",
+          "distrito": "Chorrillos",
+          "fecha de registro": "14-01-2023 11:07:39AM",
+          "ultima actualizacion": "17-02-2023 14:24:08PM"
+        },
+        {
+          "nombre": "OMAPED MUNICIPALIDAD DE VENTANILLA",
+          "telefono": "(01) 631-1400",
+          "direccion": "Av. La Playa N°188 Callao - Prov. Const. del Callao - Ventanilla - Perú",
+          "correo": "ggonzales@muniventanilla.gob.pe",
+          "sitio web": "https://www.gob.pe/muniventanilla",
+          "area de atencion": "PCD",
+          "departamento": "CALLAO",
+          "provincia": "Callo provincia",
+          "distrito": "Ventanilla",
+          "fecha de registro": "14-01-2023 15:32:25PM",
+          "ultima actualizacion": "24-02-2023 12:39:40PM"
         }
       ] , 
     "estatal":  [
       {
-        "nombre": "Espinaca",
-        "telefono": "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_640.jpg",
-        "direccion": 3.5,
-        "correo": 2.9,
-        "sitio web": 0.4,
-        "area de atencion": 0.4,
+        "nombre": "ONPE",
+        "telefono": "938202248 / 938719927",
+        "direccion": "Jirón Washington 1894, Cercado de Lima, Lima, Peru",
+        "correo": "informes@onpe.gob.pe",
+        "sitio web": "https://www.onpe.gob.pe/",
+        "area de atencion": "PCD",
         "departamento": "LIMA REGION",
-        "provincia": "Huaral",
-        "distrito": "Miraflores",
-        "fecha de registro": 0.4,
-        "ultima actualizacion": 0.4
+        "provincia": "Lima",
+        "distrito": "Cerdado de Lima",
+        "fecha de registro": "25-01-2023 12:35:56PM",
+        "ultima actualizacion": "25-01-2023 12:35:56PM"
 
       },
       {
-        "nombre": "Espinaca",
-        "telefono": "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_640.jpg",
-        "direccion": 3.5,
-        "correo": 2.9,
-        "sitio web": 0.4,
-        "area de atencion": 0.4,
+        "nombre": "MINISTERIO DE COMERCIO EXTERIOR Y TURISMO",
+        "telefono": "513-6100",
+        "direccion": "Calle Uno Oeste 050 Calle Uno Oeste 050 San Isidro - 15036 Perú",
+        "correo": "webmaster@mincetur.gob.pe",
+        "sitio web": "https://www.mincetur.gob.pe/turismo/",
+        "area de atencion": "PCD",
         "departamento": "LIMA REGION",
-        "provincia": "Huaral",
+        "provincia": "Lima",
         "distrito": "San Isidro",
-        "fecha de registro": 0.4,
-        "ultima actualizacion": 0.4
+        "fecha de registro": "25-01-2023 14:44:28PM",
+        "ultima actualizacion": "25-01-2023 14:44:28PM"
 
       }
     ], 
@@ -89,18 +114,89 @@
 
       },
       {
-        "nombre": "Espinaca",
-        "telefono": "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_640.jpg",
-        "direccion": 3.5,
-        "correo": 2.9,
-        "sitio web": 0.4,
-        "area de atencion": 0.4,
-        "departamento": "Callao",
-        "provincia": "Huaral",
-        "distrito": "San Miguel",
-        "fecha de registro": 0.4,
-        "ultima actualizacion": 0.4
+        "nombre": "POLICLÍNICO PERUANO JAPONES",
+        "telefono": "(+511) 204-2100",
+        "direccion": "Av. Gregorio Escobedo 783 15076 Jesús Maria, Peru",
+        "correo": "infopoli@apj.org.pe",
+        "sitio web": "https://www.policlinicoperuanojapones.org/",
+        "area de atencion": "SALUD",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "Jesus Maria",
+        "fecha de registro": "30-01-2023 18:39:25PM",
+        "ultima actualizacion": "30-01-2023 18:39:25PM"
 
       }
-    ] 
+    ], 
+    "educativa": [
+      {
+        "nombre": "COLEGIO FERNANDO ESLAVA",
+        "telefono": "(511) 706-9001",
+        "direccion": "Martín Pizarro 172 Surco Lima 33, Perú",
+        "correo": "fwiese@cpal.edu.pe",
+        "sitio web": "https://cpal.edu.pe/colegio-fernando-wiese/somos/",
+        "area de atencion": "PCD",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "Santiago de Surco",
+        "fecha de registro": "30-01-2023 12:14:58PM",
+        "ultima actualizacion": "30-01-2023 12:14:58PM"
+
+      }, {
+        "nombre": "COLEGIO SANTA MAGDALENA SOFIA BARAT",
+        "telefono": "(051) 437-3932 (051) 435-8543",
+        "direccion": "Los Guayabos 165 La Molina, Lima",
+        "correo": "cep@sofiabarat.edu.pe",
+        "sitio web": "https://www.sofiabarat.edu.pe/",
+        "area de atencion": "PCD",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "La Molina",
+        "fecha de registro": "30-01-2023 12:03:14PM",
+        "ultima actualizacion": "30-01-2023 13:27:11PM"
+
+      }, {
+        "nombre": "CENTRO ANN SULLIVAN DEL PERÚ",
+        "telefono": "+51514 7100",
+        "direccion": "Calle Petronila Álvarez 180 Urb. Pando 5ta Etapa",
+        "correo": "annsullivan@annsullivanperu.org",
+        "sitio web": "http://annsullivanperu.org",
+        "area de atencion": "PCD",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "San Miguel",
+        "fecha de registro": "30-01-2023 11:48:29AM",
+        "ultima actualizacion": "30-01-2023 11:48:29AM"
+
+      }
+    ], 
+    "cultural": [
+      {
+        "nombre": "MALI MUSEO DE ARTE LIMA",
+        "telefono": "(+51) 969 046254",
+        "direccion": "Paseo Colón 125, Parque de la Exposición, Lima 15046, Perú",
+        "correo": "informes@mali.pe",
+        "sitio web": "https://mali.pe/",
+        "area de atencion": "PCD",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "Cerdado de Lima",
+        "fecha de registro": "27-01-2023 12:57:41PM",
+        "ultima actualizacion": "27-01-2023 12:57:41PM"
+
+      }, {
+        "nombre": "MUSEO LARCO",
+        "telefono": "+51 1 461-1312 / +51 1 461-1835",
+        "direccion": "Av. Simón Bolívar 1515, Pueblo Libre Lima 21 - Perú Ingreso por la calle Navarra 169",
+        "correo": "info@museolarco.org",
+        "sitio web": "https://www.museolarco.org",
+        "area de atencion": "PCD",
+        "departamento": "LIMA REGION",
+        "provincia": "Lima",
+        "distrito": "Pueblo Libre",
+        "fecha de registro": "27-01-2023 16:17:01PM",
+        "ultima actualizacion": "27-01-2023 16:17:01PM"
+
+      }
+    ]
 }
