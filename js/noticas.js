@@ -29,13 +29,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (noticia.url) post.setAttribute("data-url", noticia.url);
 
                 post.innerHTML = `
-                    <img src="${noticia.imagen}" alt="${noticia.titulo}" class="post-img">
-                    <h2 class="category">${noticia.categoria}</h2>
-                    <a href="post-page.html?id=${encodeURIComponent(noticia.titulo)}" class="post-title">${noticia.titulo}</a>
-                    <span class="post-date">${noticia.fecha}</span>
-                    <p class="post-description">${noticia.descripcion}</p>
+                <section class="post-container" id="post-container">
+                    <div class="post-box">
+                        <img src="${noticia.imagen}" alt="${noticia.titulo}" class="post-img">
+                        <div class="post-text">
+                            <h2 class="category">${noticia.categoria}</h2>
+                            <a href="post-page.html?id=${encodeURIComponent(noticia.titulo)}" class="post-title">${noticia.titulo}</a>
+                            <span class="post-date">${noticia.fecha}</span>
+                            <p class="post-description">${noticia.descripcion}</p>
+                        </div>
+                    </div>
+                </section>
                 `;
-
+                
                 container.appendChild(post);
             });
 

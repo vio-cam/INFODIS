@@ -138,15 +138,11 @@ li {
     list-style: none;
 }
 
-img {
-    width: 100%;
-}
 
 section {
     padding: 3rem 0 2rem;
 }
 
-/* Estilo de la sección principal */
 /* Estilo de la sección principal */
 .not {
     width: 100%;
@@ -301,11 +297,7 @@ section {
     height: 500px;
     background: var(--container-color);
 }
-.post-container{
-    max-width: 800px;
-    margin: auto;
-    width: 100%;
-}
+
 .header-content{
     display: flex;
     flex-direction: column;
@@ -373,4 +365,106 @@ section {
     .header-img {
         max-height: 300px; /* Ajustar altura en pantallas grandes */
     }
+}
+
+/* Estilos para la tarjeta del post */
+.post-box {
+    background: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    border-radius: 0.5rem;
+    overflow: hidden; /* Para que la imagen no sobresalga */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+/* Imagen del post */
+.post-img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Mantiene la proporción sin distorsionar */
+    margin-bottom: 15px;
+}
+
+/* Texto del post */
+.post-text {
+    padding: 15px; /* Espaciado interno */
+}
+
+/* Título del post */
+.post-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Descripción del post */
+.post-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 10px; /* Espacio debajo de la descripción */
+}
+
+/* Fecha del post */
+.post-date {
+    font-size: 0.875rem;
+    color: gray; /* Color para la fecha */
+}
+
+/* Estilos para la sección de comentarios */
+#comentarios {
+    margin-top: 20px;
+    margin: 20px 50px ;
+    padding: 15px;
+    background: #f9f9f9; /* Fondo claro para los comentarios */
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario de comentarios */
+#formComentario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin: 20px 150px ;
+}
+
+#formComentario input,
+#formComentario textarea {
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formComentario button {
+    padding: 10px;
+    background: var(--second-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formComentario button:hover {
+    background: darken(var(--second-color), 10%); /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para los comentarios individuales */
+.comentario {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+}
+
+.comentario:last-child {
+    border-bottom: none; /* Sin línea en el último comentario */
+}
+
+.comentario strong {
+    display: block; /* Nombre en bloque */
+    margin-bottom: 5px; /* Espacio debajo del nombre */
+}
+
+.fecha {
+    font-size: 0.8rem;
+    color: gray; /* Color para la fecha del comentario */
 }

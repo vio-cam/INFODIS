@@ -29,7 +29,7 @@
         "imagen": "../assets/img/post-3.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
-        "titulo": "Curiosidades que no sabías sobre la cultura sorda",
+        "titulo": "Cultura sorda: curiosidades",
         "fecha": "10 Feb 2024",
         "descripcion": "La Cultura Sorda es una comunidad vibrante y diversa que se extiende por todo el mundo. La cultura sorda tiene sus propias tradiciones, costumbres y lenguajes.",
         "contenido":[ {
@@ -57,7 +57,7 @@
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
-        "titulo": "Personas con discapacidad visual",
+        "titulo": "Discapacidad visual",
         "fecha": "10 Feb 2024",
         "descripcion": "La discapacidad visual es una condición que afecta a un gran número de personas en todo el mundo. Las personas con discapacidad visual tienen dificultades para ver, lo que puede afectar su capacidad para realizar tareas cotidianas y su calidad de vida.",
         "contenido": [{
@@ -81,7 +81,7 @@
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
-        "titulo": "La discriminación a personas discapacitadas en el Perú",
+        "titulo": "Discriminación en Perú",
         "fecha": "10 Feb 2024",
         "descripcion": "A pesar de que la Ley General de Personas con Discapacidad en Perú establece un marco legal para garantizar el respeto y la inclusión de las personas con discapacidad, en la realidad aún existen numerosas barreras que impiden que se cumpla su objetivo",
         "contenido": [ {
@@ -200,7 +200,7 @@
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
-        "titulo": "Personas con discapacidad múltiple",
+        "titulo": "Discapacidad múltiple",
         "fecha": "10 Feb 2024",
         "descripcion": "La discapacidad múltiple se refiere a la presencia de dos o más discapacidades en una misma persona. Estas pueden afectar a diferentes áreas del desarrollo, como la motricidad, la comunicación, la cognición, la visión o la audición. Estas discapacidades pueden ser congénitas o adquiridas y pueden tener diferentes grados de severidad.",
         "contenido": [{
@@ -238,7 +238,7 @@
         "imagen": "../assets/img/post-1.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
-        "titulo": "Cuáles son los tipos de discapacidad ",
+        "titulo": "Tipos de discapacidad",
         "fecha": "10 Feb 2024",
         "descripcion": "Existen cuatro tipos de discapacidad: la discapacidad física o motora se refiere a problemas de movilidad, la sensorial hace referencia a la pérdida visual o auditiva, la intelectual se refiere a limitaciones para adquirir habilidades cotidianas y la psíquica hace referencia a personas con trastornos psicológicos.",
         "contenido": [{
@@ -267,7 +267,7 @@
     {
         "categoria": "Oportunidades",
         "imagen": "../assets/img/post-2.jpg",
-        "titulo": "Curso de Formación para la Inserción laboral",
+        "titulo": "Curso de Insercion Laboral",
         "fecha": "30 Mar 2023",
         "descripcion": "Inscríbete GRATIS en nuestro Curso de Formación para la inserción laboral de personas con discapacidad y desarrolla tus habilidades en el mundo laboral.",
         "url": "https://www.facebook.com/infodisperu/posts/644682261001917",

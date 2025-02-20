@@ -1,0 +1,234 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Colores */
+/* Estilos generales */
+.navbar {
+  background-color: #e5f6f8;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #d1eef2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-infodis {
+  height: 50px;
+  width: auto;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.navbar-nav .nav-link {
+  color: #0c0c0c;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: #2b7a78;
+  color: #ffffff;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 5px 0;
+}
+
+.dropdown-item {
+  color: #333333;
+  padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #2b7a78;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar-nav {
+    text-align: left;
+    display: none;
+    flex-direction: column;
+    background-color: #e5f6f8;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) {
+  .navbar-brand, .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-infodis {
+    height: 55px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 15px;
+  }
+}
+
+:root {
+  --color-fondo: #0e0e0e;
+  --color-borde: #fcba03;
+  --color-texto: #ffffff;
+  --color-placeholder: #b5b5b5;
+  --color-boton: #fcba03;
+  --color-boton-hover: #d6a002;
+  --color-boton-texto: #0e0e0e;
+  --color-link: #fcba03;
+  --color-link-hover: #d6a002;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid var(--color-borde);
+  border-radius: 1rem;
+  max-width: 35rem;
+}
+
+label {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type='text'],
+input[type='password'] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-borde);
+  color: var(--color-texto);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  outline: none;
+  border-color: var(--color-boton);
+}
+
+input[type='text']::placeholder,
+input[type='password']::placeholder {
+  color: var(--color-placeholder);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+}
+
+button[type='submit'] {
+  background-color: var(--color-boton);
+  border: none;
+  border-radius: 1rem;
+  color: var(--color-boton-texto);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type='submit']:hover {
+  background-color: var(--color-boton-hover);
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  form {
+    max-width: none;
+  }
+}
+
+main {
+  flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  margin-top: 230px; /* Asegúrate de que el footer esté al final */
+}

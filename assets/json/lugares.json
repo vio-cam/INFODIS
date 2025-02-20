@@ -1,0 +1,215 @@
+{
+    "Entretenimiento" : [
+        {
+          "nombre": "TEATRO PERUANO JAPONES",
+          "imagen": "https://infodisperu.com/storage/places/xiLo1AGMe1xMNhhAobF3C6OQmXdIRfqZsFB8p2I1.jpg",
+          "direccion": "Av. Gregorio Escobedo 803, Residencial San Felipe",
+          "sitio web": "https://www.apj.org.pe/teatro/servicios-al-usuario",
+          "categoria" : "Entretenimiento",
+          "subcategoria": "TEATRO",
+          "Nivel de Acesibilidad": "3",
+          "Detalles del lugar": "Acceso especial al Teatro a través de rampas para silla de ruedas y/o personas con discapacidad física. Servicios higiénicos a nivel de platea y mezzanine."
+        },
+        {
+            "nombre": "GRAN TEATRO NACIONAL",
+            "imagen": "https://infodisperu.com/storage/places/2DGEau0VTkT8pcSwyqnsDOj3p6A6jITLUoH6OWUl.jpg",
+            "direccion": "Av. Javier Prado Este 2225, San Borja. Lima - Perú.",
+            "sitio web": "https://granteatronacional.pe/",
+            "categoria" : "Entretenimiento",
+            "subcategoria": "TEATRO",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "El Gran Teatro Nacional del Perú es un escenario multipropósito ubicado en Lima, Perú.​Es el más grande del país, cuenta con una capacidad de 1.500 personas."
+          },
+          {
+            "nombre": "TEATRO UNIVERSITARIO DE SAN MARCOS - CCSM",
+            "imagen": "https://infodisperu.com/storage/places/n9ZSLJfYo3O9ExBQHbTT2mIRvC2A7NNyS26wW1A4.jpg",
+            "direccion": "Jirón Lampa 833. Centro Histórico de Lima., Lima, Peru",
+            "sitio web": "https://www.facebook.com/TeatroSanMarcos/",
+            "categoria" : "Entretenimiento",
+            "subcategoria": "TEATRO",
+            "Nivel de Acesibilidad": "2",
+            "Detalles del lugar": " La sala tiene un espacio para sillas de ruedas de 1.35 m de ancho, donde pueden acomodarse hasta dos sillas de ruedas en la parte posterior. Los SS.HH. no son accesibles para personas que utilizan silla de ruedas. "
+          },
+          {
+            "nombre": "AUDITORIO ZUM DE LA UNIVERSIDAD DE LIMA",
+            "imagen": "https://infodisperu.com/storage/places/Rfqakiodd7pZ49vpunUUA7tzcc7F4TygHirAQ6c5.jpg",
+            "direccion": "Av. Javier Prado Este N.° 4600 Urbanización Fundo Monterrico Chico Distrito de Santiago de Surco",
+            "sitio web": "https://www.centroculturalulima.com/conocenos/",
+            "categoria" : "Entretenimiento",
+            "subcategoria": "TEATRO",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "Hay lugar para ubicar una silla de ruedas en cualquier parte del auditorio, ya que tiene sillas movibles y la sala se puede configurar de muchas maneras distintas. Esta sala no cuenta con ning˙n tipo de aparato de audiciÛn asistida para personas con discapacidad auditiva. Hay SS.HH. accesibles para personas con movilidad fÌsica restringida."
+          },
+          {
+            "nombre": "CINEPOLIS LARCOMAR",
+            "imagen": "https://infodisperu.com/storage/places/wNdD4h5o4phee3LvZAnfOoSWSfoFqiq4S9rONxxB.jpg",
+            "direccion": "Malecón De La Reserva 615, Miraflores Lima, Lima 18 Perú",
+            "sitio web": "https://cinepolis.com.pe/",
+            "categoria" : "Entretenimiento",
+            "subcategoria": "CINE",
+            "Nivel de Acesibilidad": "4",
+            "Detalles del lugar": "Accesibilidad para todas las personas, implementan una nueva manera de navegación para ayudar a aquellas con diferentes capacidades visuales y auditivas."
+          },
+          {
+            "nombre": "MALECÓN DE MIRAFLORES",
+            "imagen": "https://infodisperu.com/storage/places/HIwyylEp9ZiPxio13IKlDWIHPKnKfrpZjuODKrzA.jpg",
+            "direccion": "Malecón De La Reserva 615, Miraflores Lima, Lima 18 Perú",
+            "sitio web": "https://cinepolis.com.pe/",
+            "categoria" : "Entretenimiento",
+            "subcategoria": "ZONA DE RECREACIÓN",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "Se encuentra cerca del acantilado en Miraflores y con una vista a la bahía de Lima, denominada Costa Verde. En él se realizan actividades deportivas como parapente y ciclismo o actividades de esparcimiento."
+          },
+          {
+            "nombre": "AV. JOSÉ A LARCO",
+            "imagen": "https://infodisperu.com/storage/places/mip1zYy7rMr2ObQRSwO6uvqazfnMcyc1DIoS0dhF.jpg",
+            "direccion": "Avenida José A. Larco - Miraflores",
+            "sitio web": "https://www.miraflores.gob.pe/los-servicios/desarrollo-humano/inclusiva-accesible/medidas_de_accesibilidad/",
+            "categoria" : "Entretenimiento",
+            "subcategoria": "ZONA DE RECREACIÓN",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "La Municipalidad de Miraflores ha instalado en las principales esquinas de la avenida Larco, semáforos sonoros que alertan a las personas ciegas sobre el momento exacto en que deben cruzar. Con la finalidad de brindar mayor seguridad a los transeúntes con discapacidad visual, las rampas también fueron debidamente señalizadas"
+          }
+      ] , 
+    "Educación" : [
+        {
+          "nombre": "UPC CAMPUS SAN ISIDRO",
+          "imagen": "https://infodisperu.com/storage/places/TzqCmWi9bAuaragQ5z6hqPy3nT8WUoHAShDQ2YOL.jpg",
+          "direccion": "Av. Gregorio Escobedo 803, Residencial San Felipe",
+          "sitio web": "https://www.upc.edu.pe/nosotros/campus/campus-san-isidro/",
+          "categoria" : "Educación",
+          "subcategoria": "UNIVERSIDADES",
+          "Nivel de Acesibilidad": "3",
+          "Detalles del lugar": "El campus San Isidro de la UPC, cuenta con modernas instalaciones accesibles, para ofrecerte una experiencia universitaria única."
+        },
+        {
+            "nombre": "BRITANICO SURCO CENTRO DE ENSEÑANZA",
+            "imagen": "https://infodisperu.com/storage/places/qP0eKEz582OVsrpNjhujST0prkgyYkYIP2gbNI1F.jpg",
+            "direccion": "AV. CAMINOS DEL INCA 3581, Surco",
+            "sitio web": "https://www.britanico.edu.pe/centros/",
+            "categoria" : "Educación",
+            "subcategoria": "INSTITUTOS",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "Centro de enseñanza, cuenta con espacios accesibles como rampas, ascensores, pisos lisos, estacionamientos para PCD en el interior y exterior."
+        }
+      ] , 
+    "Turismo" : [
+        {
+          "nombre": "JW MARRIOT HOTEL LIMA",
+          "imagen": "https://infodisperu.com/storage/places/AbqxrgOaFIGh2JYHw8A5cuqkFXMGYpNp2SU12ruX.jpg",
+          "direccion": "Malecón De La Reserva 615, Miraflores, Lima Lima 18 Perú",
+          "sitio web": "https://www.marriott.com/en-us/hotels/limdt-jw-marriott-hotel-lima/overview/",
+          "categoria" : "Turismo",
+          "subcategoria": "HOTELES",
+          "Nivel de Acesibilidad": "3",
+          "Detalles del lugar": "El Jw Marriott Hotel Lima es una propiedad de lujo de 5 estrellas, ubicada a tan solo 11 minutos a pie de Atlantic City, y a 15 minutos de coche del Circuito Mágico del Agua."
+        },
+        {
+            "nombre": "LOS DELFINES HOTEL",
+            "imagen": "https://infodisperu.com/storage/places/CakPCv4FyCWbhEOztKRLOF6y1mVzc8t1MJuwhzhT.jpg",
+            "direccion": "Calle Los Eucaliptos 555 San Isidro, Peru",
+            "sitio web": "https://www.losdelfineshotel.com/es",
+            "categoria" : "Turismo",
+            "subcategoria": "HOTELES",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": " La entrada principal está al nivel de la vereda. El mostrador de recepción tiene una altura de 1.23 m, pero hay una mesa adecuada para el registro de personas que usan silla de ruedas. Los ascensores tienen el panel de control a 1.60 m de altura en su parte más alta. Los teléfonos cuentan con señales luminosas y el televisor tiene sistema de subtitulado. "
+        }
+      ],
+      "Servicios" : [
+        {
+          "nombre": "MADAM TUSAN C.C. REAL PLAZA SALAVERRY",
+          "imagen": "https://infodisperu.com/storage/places/TvZV09VCFaiirDwlILAt1ffqoUGB54GD0jqwdhOO.jpg",
+          "direccion": "C.C Real Plaza Salaverry – Jesús María (Av. General Felipe Salaverry 2470 – 2do nivel, entrada principal)",
+          "sitio web": "https://madamtusan.pe/",
+          "categoria" : "Turismo",
+          "subcategoria": "COMIDA",
+          "Nivel de Acesibilidad": "3",
+          "Detalles del lugar": "Restaurante peruano de cocina chino peruana conocida como Chifa, ubicado en Lima, Perú."
+        },
+        {
+            "nombre": "TANTA DE LARCOMAR",
+            "imagen": "https://infodisperu.com/storage/places/L3lfp99yXcB5uGH5XocoekgcHDgBt1orVNucdXL0.jpg",
+            "direccion": "Mal. de la Reserva 610, Miraflores 15074",
+            "sitio web": "https://tantaperu.com/",
+            "categoria" : "Turismo",
+            "subcategoria": "COMIDA",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "  Accesible en terraza, piso plano, y puedes utilizar los SSHH del centro comercial los cuales son accesibles, parqueo y accesos para silla de ruedas en Larcomar. "
+        }
+      ],
+      "Cultura" : [
+        {
+          "nombre": "SALA PARA PERSONAS CON DISCAPACIDAD VISUAL DELFINA OTERO VILLARÁN",
+          "imagen": "https://infodisperu.com/storage/places/sKX2m45YRgcVCePslgdJL641j5R4PSXfVcZU4sgp.jpg",
+          "direccion": "Av. Abancay 4ta. Cdra. s/n Lima 01",
+          "sitio web": "https://www.bnp.gob.pe/servicios/sala-de-lectura/gbpl-sala-discapacidad-visual/",
+          "categoria" : "Cultura",
+          "subcategoria": "BIBLIOTECA",
+          "Nivel de Acesibilidad": "3",
+          "Detalles del lugar": "Cuenta con equipos tecnológicos especializados que permiten el reconocimiento y lectura de textos impresos, como son los lectores y ampliadores de caracteres. Igualmente se realiza la impresión de textos en sistema Braille y se desarrolla periódicamente el Club de lectura “Leyendo con tacto” y talleres para el aprendizaje del sistema Braille."
+        },
+        {
+            "nombre": "MALI - MUSEO DE ARTE DE LIMA",
+            "imagen": "https://infodisperu.com/storage/places/h7rvGAsJspS2aZctGLJJRYGcRMEi5LURU0kLShkk.jpg",
+            "direccion": "Paseo Colón 125, Parque de la Exposición, Lima 15046, Perú.",
+            "sitio web": "https://mali.pe/visitanos/",
+            "categoria" : "Cultura",
+            "subcategoria": "MUSEO",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": " El MALI dispone de ascensores, rampas y cuartos de baños acondicionados para personas con movilidad limitada. "
+        },
+        {
+            "nombre": "MUSEO LARCO",
+            "imagen": "https://infodisperu.com/storage/places/0dsa7a0yHhAgl94FaFwXGDHjgwK4lSBB4fLCntXl.jpg",
+            "direccion": "Av. Simón Bolívar 1515, Pueblo Libre, Lima 21, Perú Ingreso por la calle Navarra 169 (frente al Parque Larco).",
+            "sitio web": "https://www.museolarco.org/",
+            "categoria" : "Cultura",
+            "subcategoria": "MUSEO",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "Rampas accesibles que permiten el recorrido por todas las salas de exposición y jardines del museo. Acceso permitido al museo con perro guía. Préstamo gratuito de silla de ruedas en el primer nivel. Tarifa reducida para peruanos con discapacidad (acreditación Conadis). Servicios higiénicos accesibles para personas con discapacidad."
+        },
+        {
+            "nombre": "MUSEO DE SITIO HUACA PUCLLANA",
+            "imagen": "https://infodisperu.com/storage/places/T5uGDUoFg112uSyuu8op5Wk4Lh0pKYjfH1JdvW3c.jpg",
+            "direccion": "Paseo Colón 125, Parque de la Exposición, Lima 15046, Perú.",
+            "sitio web": "http://huacapucllanamiraflores.pe/",
+            "categoria" : "Cultura",
+            "subcategoria": "MUSEO",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "Cumpliendo con el compromiso adquirido un año antes entre el Instituto Nacional de Cultura (INC) y la Municipalidad de Miraflores en el “Forum Taller Miraflores al 2000”, cuenta con facilidades como rampas de acceso, y sala para personas con discapacidad visual. "
+        }
+      ],
+      "Salud" : [
+        {
+          "nombre": "INSTITUTO NACIONAL DE REHABILITACIÓN - INR",
+          "imagen": "https://infodisperu.com/storage/places/soZQupKMK7e6KIJiuDbPUgF24NIxoiVHV4ndntEd.jpg",
+          "direccion": "Av. Defensores del Morro 264, Chorrillos 15057",
+          "sitio web": "https://www.inr.gob.pe/",
+          "categoria" : "Salud",
+          "subcategoria": "CLÍNICAS Y HOSPITALES",
+          "Nivel de Acesibilidad": "3",
+          "Detalles del lugar": "Institución de salud especializada en medicina física y de rehabilitación, que desarrolla investigación, docencia, atención integral de alta complejidad, fortalecimiento de recursos humanos, transferencia tecnológica a los servicios de rehabilitación, con enfoque humanístico y orientado hacia la inclusión de la Persona con discapacidad."
+        }
+      ],
+      "Comercio" : [
+        {
+          "nombre": "JOCKEY PLAZA",
+          "imagen": "https://infodisperu.com/storage/places/apDJ78mmgQC3pdZatg5tpz5f19viXUEVAz8FUY1B.jpg",
+          "direccion": "Av. Javier Prado Este 4200, Santiago de Surco 15023",
+          "sitio web": "https://jockeyplaza.com.pe/",
+          "categoria" : "Comercio",
+          "subcategoria": "CENTRO COMERCIAL",
+          "Nivel de Acesibilidad": "3",
+          "Detalles del lugar": "Centro comercial de dos pisos con cadenas minoristas internacionales, patio de comidas, área de juegos y cine."
+        },
+        {
+            "nombre": "LARCOMAR",
+            "imagen": "https://infodisperu.com/storage/places/PbT3XivGx2acr5OfGBU9C9g8ZvrdIO7hoHT4e7gm.jpg",
+            "direccion": "Mal. de la Reserva 610, Miraflores 15074",
+            "sitio web": "https://tantaperu.com/",
+            "categoria" : "Comercio",
+            "subcategoria": "CENTRO COMERCIAL",
+            "Nivel de Acesibilidad": "3",
+            "Detalles del lugar": "  Fue inaugurado el 27 de noviembre de 1998, ocupa un área de 45 mil metros cuadrados y demandó una inversión aproximadamente de 60 millones de dólares."
+        }]
+}

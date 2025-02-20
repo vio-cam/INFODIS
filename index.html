@@ -9,32 +9,48 @@
 
 </head>
 <body>
-    <header class="navegador">
-        <div class="nav-bar">
-            <nav>
-                <ul>
-                  <a href="index.html"><img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" class="logo-infodis"></a>
-                  <li>
-                    <a href="#">Recursos</a>
-                    <ul> 
-                      <li><a href="html/instituciones.html">Instituciones</a></li>
-                      <li><a href="#">Agenda</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="html/servicios.html">Servicios</a>
-                    <ul> 
-                      <li><a href="html/talleres.html">Capacitaciones</a></li>
-                      <li><a href="html/talleres.html">Denuncias y quejas</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="html/noticias.html">Noticias</a></li>
-                  <li><a href="#">Contacto</a></li>
-                  <li><a href="#">Cuenta</a></li>
-                </ul>
-            </nav>
-          </div> 
-      </header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" class="logo-infodis" alt="Logo Infodis">
+      </a>
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+        <span class="menu-icon">☰</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recursos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="html/instituciones.html">Instituciones</a></li>
+              <li><a class="dropdown-item" href="html/lugares.html">Espacios adaptados</a></li>
+              <li><a class="dropdown-item" href="#">Agenda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="html/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/noticias.html">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/login.html">Cuenta</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.querySelector('.navbar-toggler');
+      const navbarNav = document.getElementById('navbarNavDropdown');
+    
+      toggleButton.addEventListener('click', () => {
+        navbarNav.classList.toggle('show');
+      });
+    
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+      });
+    });
+    </script>
 
     <div class="position-relative">
         <!-- Imagen de fondo -->
@@ -50,19 +66,20 @@
               <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">
                 "Conectamos a personas con discapacidad con empresas inclusivas, brindando servicios y capacitaciones para convertir sus sueños de inclusión laboral en una realidad."
               </p>
-              <div class="position-relative d-inline-flex align-items-center">
-                <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" 
-                   href="https://youtu.be/PsuqhEl35bc?si=ZiaehcFy6XtvfKYk" 
-                   data-bs-toggle="video" 
-                   aria-label="Reproducir vídeo">
-                  <i class="ai-play-filled"></i>
-                </a>
-                <span class="text-body fs-lg fw-semibold ms-3 text-white">Ver video</span>
-              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="container content-space-2 content-space-lg-3 mt-5 text-container">
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mt-7">
+          <h2>Conectamos a personas con discapacidad con empresas inclusivas</h2>
+          <p>Convertiremos sus sueños de inclusión laboral en una realidad.</p>
+        </div>
+      </div>
+
+
       <section class="container pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5">
         <div class="row align-items-center pt-2 pt-sm-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
           <div class="col-md-6 col-xl-5 pb-3 pb-md-0 mb-4 mb-md-0">
@@ -122,9 +139,152 @@
           </div>
         </div>
       </section>
-      <footer id="main-footer" class="footer">
-        <div class="container">
-            <p>&copy; Todos los derechos reservados a Hack Her</p>
+
+      <div class="mt-5 pt-5">
+        <p style="text-align: center; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">¿Por que existimos?</p>
+      </div>
+
+      <!--linea de tiempo/historia-->
+      <div class="timeline">
+        <div class="event" id="event1">
+            <div class="circle"></div>
+            <h3>Inicio del Proyecto</h3>
+            <p>INFODIS Perú nace como un proyecto impulsado por un equipo de profesionales comprometidos con la inclusión de las personas con discapacidad.</p>
+        </div>
+        <div class="event" id="event2">
+            <div class="circle"></div>
+            <h3>Objetivo Principal</h3>
+            <p>Se establece el objetivo de ofrecer una plataforma que conecte a las personas con discapacidad con oportunidades laborales, servicios y recursos de formación.</p>
+        </div>
+        <div class="event" id="event3">
+            <div class="circle"></div>
+            <h3>Cursos de Formación</h3>
+            <p>Se lanzan cursos gratuitos para Call Center, diseñados para fomentar la inclusión laboral.</p>
+        </div>
+        <div class="event" id="event4">
+            <div class="circle"></div>
+            <h3>Acceso a Información</h3>
+            <p>Se facilita el acceso a información actualizada sobre accesibilidad, salud, educación y legislación relacionada con la discapacidad.</p>
+        </div>
+        <div class="event" id="event5">
+            <div class="circle"></div>
+            <h3>Directorio Inclusivo</h3>
+            <p>Se crea un directorio de instituciones y empresas inclusivas, así como un espacio para eventos y noticias relevantes.</p>
+        </div>
+        <div class="event" id="event6">
+            <div class="circle"></div>
+            <h3>Registro de Personas con Discapacidad</h3>
+            <p>Las personas con discapacidad pueden registrarse en la base de datos para ser conectadas con empresas inclusivas.</p>
+        </div>
+        <div class="event" id="event7">
+            <div class="circle"></div>
+            <h3>Conexión con Empresas</h3>
+            <p>Las empresas pueden acceder a una lista de candidatos capacitados, facilitando la inclusión laboral.</p>
+        </div>
+        <div class="event" id="event8">
+            <div class="circle"></div>
+            <h3>Colaboración con OMAPED</h3>
+            <p>INFODIS trabaja en colaboración con las OMAPED de todo el país, brindando acceso a beneficios y recursos gratuitos.</p>
+        </div>
+        <div class="event" id="event9">
+            <div class="circle"></div>
+            <h3>Participación en la Sociedad</h3>
+            <p>Se facilita la participación de las personas con discapacidad en la sociedad y el mercado laboral.</p>
+        </div>
+    </div>
+
+    <!--TESTIMONIOS-->
+    <section class="testimonials text-center">
+      <div class="container">
+        <p class="text-uppercase text-muted">Testimonios</p>
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-card mx-auto" style="max-width: 800px;">
+                <img src="https://www.hola.com/horizon/landscape/6a53cd5134b2-getty-chica-feliz-t.jpg?im=Resize=(640),type=downsize" alt="Cliente" class="testimonial-avatar">
+                <div class="testimonial-info text-start">
+                  <p class="testimonial-name">Lilianna Bocouse</p>
+                  <p class="testimonial-position">Jefa de Marketing</p>
+                  <p class="testimonial-text">
+                    “INFODIS Perú nos proporciona datos detallados y precisos que necesitamos para tomar decisiones estratégicas. Sus herramientas están en constante mejora y contienen información útil e interesante.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card mx-auto" style="max-width: 800px;">
+                <img src="https://covalto.com/static/78498ccda70933a5f1e3edc3e40d3cbe/34aca/Hero_Mobile_Cuenta_Personas_V1_1_8046e424ea.webp" alt="Cliente" class="testimonial-avatar">
+                <div class="testimonial-info text-start">
+                  <p class="testimonial-name">Carlos Ramírez</p>
+                  <p class="testimonial-position">Director de Proyectos</p>
+                  <p class="testimonial-text">
+                    “Gracias a INFODIS Perú, hemos mejorado nuestra gestión de recursos y optimizado nuestros procesos internos con resultados sorprendentes.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators mt-4" >
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"style="background-color:#00485E"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonio 2" style="background-color:#00485E"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const carousel = document.getElementById('testimonialCarousel');
+      const items = carousel.querySelectorAll('.carousel-item');
+      const indicators = carousel.querySelectorAll('.carousel-indicators button');
+    
+      function updateAnimation() {
+        items.forEach(item => item.querySelector('.testimonial-card').classList.remove('active'));
+        const activeItem = carousel.querySelector('.carousel-item.active .testimonial-card');
+        if (activeItem) {
+          setTimeout(() => activeItem.classList.add('active'), 10);
+        }
+      }
+    
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          items.forEach(item => item.classList.remove('active'));
+          items[index].classList.add('active');
+          updateAnimation();
+        });
+      });
+    
+      document.addEventListener('DOMContentLoaded', updateAnimation);
+    </script>
+
+    <!--ALIADOS-->
+    <section class="aliados-section">
+      <h2 class="aliados-title">Nuestros aliados</h2>
+      <div class="aliados-logos">
+        <a href="html/OMAPED.html">
+          <img src="assets/img/image-removebg-preview.png" alt="Fundación Peruana de Cáncer">
+        </a>
+        <a href="https://fundades.org/"><img src="https://fundades.org/wp-content/uploads/2020/09/logo-Fundades-web-2020.png" alt="Casa Ronald McDonald Perú"></a>
+        <a href="https://juguetependiente.org">
+          <img src="https://infodisperu.com/images/imagen-coordinadora-nacional-de-redes-omaped-logo.jpg?214ba3efa984e08a3282d87f9d9bf146" alt="Juguete Pendiente">
+        </a>
+      </div>
+    </section>
+
+    <div class="invt-f">    
+      <p class="txt-f">¡Te invitamos a registrarte y unirte a nuestra red! 🌐🤝 Colabora con nosotros para promover la inclusión laboral de las personas con discapacidad 💼♿️. Accede a capacitaciones 🎓, servicios 🛠️ y oportunidades 🚀. ¡Juntos podemos hacer de la inclusión una realidad para todos! 🙌</p>
+      <div class="btn-footer">
+        <a href="html/regitro.html"><button class="btn-f">Registrarse</button></a>
+        <a href="html/convencer.html"><button class="btn-f">¿Por que elegir infodis?</button></a>
+      </div>
+    </div>
+    <footer style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f8f8f8; border-top: 1px solid #e7e7e7;">
+        <div style="flex: 1;">
+            <p style="margin: 0;">© 2023 Tu Empresa. Todos los derechos reservados.</p>
+            <p style="margin: 0;"><a href="html/privacidad.html">Política de privacidad</a> | <a href="html/terminos.html">Términos y condiciones</a></p>
+        </div>
+        <div style="flex: 1; text-align: right;">
+            <img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" alt="Logo de Tu Empresa" style="height: 50px;">
         </div>
     </footer>
 
