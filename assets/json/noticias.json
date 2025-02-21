@@ -2,7 +2,7 @@
     {
         "idArticulo": "articulo_1",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-1.jpg",
+        "imagen": "https://i.pinimg.com/736x/4e/96/f9/4e96f99b482307a1b6174523fff96798.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Discapacidad en la sociedad",
@@ -26,7 +26,7 @@
     {
         "idArticulo": "articulo_2",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-3.jpg",
+        "imagen": "https://i.pinimg.com/736x/49/13/bb/4913bb289a0f7d988dfa2573dae8cc8a.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Cultura sorda: curiosidades",
@@ -54,7 +54,7 @@
     {
         "idArticulo": "articulo_3",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-1.jpg",
+        "imagen": "https://i.pinimg.com/736x/8f/47/8d/8f478dfb51d9808fdc1114625d8acc27.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Discapacidad visual",
@@ -78,7 +78,7 @@
     {
         "idArticulo": "articulo_4",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-1.jpg",
+        "imagen": "https://www.gob.mx/cms/uploads/article/main_image/26780/discriminaci_n.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Discriminación en Perú",
@@ -115,7 +115,7 @@
     {
         "idArticulo": "articulo_5",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-3.jpg",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyBv7B1_LnzBQNtzIaQHIVW2rbhJ_nyoN1w&s",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Cómo tratar la tartamudez",
@@ -148,7 +148,7 @@
     {
         "idArticulo": "articulo_6",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-1.jpg",
+        "imagen": "https://i.pinimg.com/736x/1f/c0/e1/1fc0e1adae97dc7f164fbf292226a789.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "La lengua de señas en Perú (LSP)",
@@ -171,7 +171,7 @@
     {
         "idArticulo": "articulo_7",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-3.jpg",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMhgUyQ5ZPKTPwhrHWCUce7_ugk833-gahtjBiOkfZAUR747H3JQ5Eh2G_cg-u2dKZ7Eo&usqp=CAU",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "La hiperactividad (TDAH)",
@@ -197,7 +197,7 @@
     {
         "idArticulo": "articulo_8",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-1.jpg",
+        "imagen": "https://temadepsicologiasite.wordpress.com/wp-content/uploads/2019/09/trastornos-dis.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Discapacidad múltiple",
@@ -213,7 +213,7 @@
     {
         "idArticulo": "articulo_9",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-3.jpg",
+        "imagen": "https://i.pinimg.com/736x/02/b0/63/02b063f9c160cc5923abad761d4c461b.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Los trastornos DIS en niños",
@@ -235,7 +235,7 @@
     {
         "idArticulo": "articulo_10",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-1.jpg",
+        "imagen": "https://i.pinimg.com/736x/02/b0/63/02b063f9c160cc5923abad761d4c461b.jpg",
         "categoria": "Articulos",
         "url": "post-page.html",
         "titulo": "Tipos de discapacidad",
@@ -266,7 +266,7 @@
 ]},
     {
         "categoria": "Oportunidades",
-        "imagen": "../assets/img/post-2.jpg",
+        "imagen": "http://127.0.0.1:5500/assets/img/post-2.jpg",
         "titulo": "Curso de Insercion Laboral",
         "fecha": "30 Mar 2023",
         "descripcion": "Inscríbete GRATIS en nuestro Curso de Formación para la inserción laboral de personas con discapacidad y desarrolla tus habilidades en el mundo laboral.",
@@ -330,10 +330,10 @@
     {
         "idArticulo": "articulo_11",
         "filtro": "articulos",
-        "imagen": "../assets/img/post-3.jpg",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRlYE3QdtViPNQgMNa9HOsfRTYC8BDku51T6d7l4m1RRtdwq_n0Hex3jznC1ScddoBWI&usqp=CAU",
         "categoria": "Articulos",
         "url": "post-page.html",
-        "titulo": "Aplicaciones que ayudan a las personas con discapacidad",
+        "titulo": "Aplicaciones",
         "fecha": "10 Feb 2024",
         "descripcion": "Existen diferentes aplicaciones que ayudan a las personas con discapacidad a ser más independientes: Google Lens, Háblalo, Lazarillo App, Envision Al, RogerVoice, y Braille Tutor.",
         "contenido": [
@@ -369,7 +369,7 @@
 {
     "idArticulo": "articulo_12",
     "filtro": "articulos",
-    "imagen": "../assets/img/post-3.jpg",
+    "imagen": "https://i.pinimg.com/736x/8c/bd/18/8cbd18fd9459df742dd9055ec5d0439f.jpg",
     "categoria": "Articulos",
     "url": "post-page.html",
     "titulo": "¿Cómo abordar la educación de niños con discapacidad? ",

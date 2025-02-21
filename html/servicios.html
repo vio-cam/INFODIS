@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/servicios.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -22,8 +25,7 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recursos</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="../html/instituciones.html">Instituciones</a></li>
-                  <li><a class="dropdown-item" href="#">Agenda</a></li>
-                  <li><a class="dropdown-item" href="../html/lugares.html">Espacios adaptados</a></li>
+                  <li><a class="dropdown-item" href="../html/agenda.html">Agenda</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link active" href="../html/servicios.html">Servicios</a></li>
@@ -51,87 +53,147 @@
         });
         </script>
 
-    <div class="general">
-        <div class="main_content">
-            <div class="info">
-                <h1>Nuestros servicios para personas con diversidad funcional</h1>
-                <div class="descripcion">
-                    <p>Ponemos a tu disposición servicios especializados con lugares accesibles e información actualizada sobre capacitaciones, cursos y denuncias.
-                    <br>Juntos construimos un entorno accesible y lleno de oportunidades
-                    </p>
-                </div>  
-            </div>
-        </div>
-        <div class="second_container">
-            <h2 class="frase"><u>Te invito a explorar nuestros servicios</u></h2>
-            <div class="servicios">
-            
-                <div class="card">
-                    <img src="../assets/img/formacion.jpg" alt="Imagen 2">
-                    <div class="card-content">
-                            <h3>Capacitaciones</h3>
-                            <p>Infodis Perú ofrece cursos de formación en teletrabajo.</p>
-                        <div class="button"><a href="../html/talleres.html">→</a></div>
-    
-                    </div>
-                </div>
-            
-                <div class="card" id="dnc">
-                    <img src="../assets/img/denuncias_anonimas.jpg" alt="Imagen 3">
-                    <div class="card-content">
-                            <h3>Denuncias y quejas</h3>
-                            <p>🚨 ¡Tu voz importa!</p>
-                        <div class="button" id="openPanel">→</div>
-
-                        <div class="side-panel" id="sidePanel">
-                            <div class="close-btn" id="closePanel">✖</div>
-                            <div class="form-container">
-                                <h2>DENUNCIAS Y QUEJAS - INFODIS PERÚ</h2>
-                                <p>Si deseas presentar una denuncia, puedes hacerlo a través de este formulario.</p>
-                                <form action="procesar.php" method="POST">
-                                    <label for="nombre">Nombre y apellidos:</label>
-                                    <input type="text" id="nombre" name="nombre" required>
-                                
-                                    <label for="dni">DNI</label>
-                                    <input type="number" id="dni" name="dni" required>
-                    
-                                    <label for="telefono">Teléfono</label>
-                                    <input type="tel" id="tel" name="tel" required>
-                    
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
-                    
-                                    <label for="mensaje">Motivo de la denuncia</label>
-                                    <textarea id="mensaje" name="mensaje" required></textarea>
-                                
-                                    <button class="send-btn">Enviar</button>
-                                </form>
-                                
-                            </div>
-                        </div>
-                    
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </div>
-        
+  <div class="position-relative">
+    <!-- Imagen de fondo -->
+    <div class="swiper-slide-cover bg-position-top-center position-absolute top-0 start-0 w-100 h-100 z-1" 
+        style="background-image: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+      ),
+      url(../assets/img/servicio.png); background-repeat: no-repeat;  background-size: cover;
+      background-position: left center; /* La imagen se muestra desde la izquierda */
+      background-repeat: no-repeat;">
     </div>
-    
+
+    <!-- Contenedor del contenido -->
+    <div class="container position-relative z-2 py-lg-3 py-xl-5 my-5">
+      <div class="row pt-md-3 py-xxl-5 my-5 justify-content-start align-items-center hero-content">
+        <!-- Alineación a la izquierda con margen derecho -->
+        <div class="col-12 col-md-6 py-5 mb-md-4 mb-lg-5 text-white text-start content-box">
+          <h1 class="titulo-infodis display-1 text-uppercase mb-4 " style="font-size: 30px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Nuestros servicios para personas con diversidad funcional
+          </h1>
+          <p class="d-block fs-xl pb-2 mb-4 mb-md-5">
+            Ponemos a tu disposición servicios especializados con lugares accesibles e información actualizada sobre capacitaciones, cursos y denuncias.
+            Juntos construimos un entorno accesible y lleno de oportunidades
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="general">
+      <div class="second_container">
+          <h2 class="frase" style="text-align: center;">Te invito a explorar nuestros servicios</h2>
+          <div class="servicios">
+              <div class="card">
+                  <img src="../assets/img/formacion.jpg" alt="Capacitaciones">
+                  <div class="card-content">
+                      <h3>Capacitaciones</h3>
+                      <p>Infodis Perú ofrece cursos de formación en teletrabajo.</p>
+                      <div class="boton-icon"><a href="../html/talleres.html"><i class="fa-solid fa-arrow-right"></i></a></div>
+                  </div>
+              </div>
+
+              <div class="card" id="dnc">
+                  <img src="../assets/img/denuncias_anonimas.jpg" alt="Denuncias y quejas">
+                  <div class="card-content">
+                      <h3>Denuncias y quejas</h3>
+                      <p>¡Tu voz importa!</p>
+                      <div class="boton-icon" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-arrow-right"></i></div>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <img src="../assets/img/lug1.jpg" alt="Espacios Adaptados">
+                  <div class="card-content">
+                      <h3>Espacios Adaptados</h3>
+                      <p>Donde uno puede estar, otro también.</p>
+                      <div class="boton-icon"><a href="../html/lugares.html"><i class="fa-solid fa-arrow-right"></i></a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">DENUNCIAS Y QUEJAS - INFODIS PERÚ</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="denunciasForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="col-form-label">Nombre y apellido:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dni" class="col-form-label">DNI:</label>
+                            <input type="number" class="form-control" id="dni" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="col-form-label">Teléfono:</label>
+                            <input type="number" class="form-control" id="tel" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="col-form-label">Motivo de la denuncia:</label>
+                            <textarea class="form-control" id="mensaje" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="denunciasForm" class="btn btn-primary" style="background-color: #FCCB00; border: #FCCB00;">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f8f8f8; border-top: 1px solid #e7e7e7;">
       <div style="flex: 1;">
           <p style="margin: 0;">© 2023 Tu Empresa. Todos los derechos reservados.</p>
           <p style="margin: 0;"><a href="html/privacidad.html">Política de privacidad</a> | <a href="html/terminos.html">Términos y condiciones</a></p>
       </div>
+      <div class="social">
+          <a href="https://www.facebook.com/infodisperu/"><i class="bi bi-facebook" font-size="15px" ></i></a>
+          <a href="https://twitter.com/infodisperu"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/grupo-fundades-peru/"><i class="bi bi-linkedin"></i> </a>
+          <a href="https://www.youtube.com/user/GFundades"><i class="bi bi-youtube" style="font-size: 20px;"></i></a>
+          <p style="margin: 0;"><a href="https://www.google.com/maps/place/Jr.+Alfredo+Silva+180,+Barranco+15063/@-12.155262,-77.023144,16z/data=!4m5!3m4!1s0x9105b7925cf938af:0x64a15cb7e048ce75!8m2!3d-12.1552622!4d-77.023144?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">Barranco - Lima, Perú 15063</a> | <a href=""></a>infodis@fundades.org</p>
+      </div>
       <div style="flex: 1; text-align: right;">
           <img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" alt="Logo de Tu Empresa" style="height: 50px;">
       </div>
-    </footer>
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/ser2version.js"></script>
+    <script>
+      document.getElementById('denunciasForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const nombre = document.getElementById('nombre').value;
+          const email = document.getElementById('email').value;
+          const dni = document.getElementById('dni').value;
+          const telefono = document.getElementById('tel').value;
+          const mensaje = document.getElementById('mensaje').value;
+
+          if (!nombre || !email || !dni || !telefono || !mensaje) {
+              alert('Por favor, completa todos los campos.');
+              return;
+          }
+
+          alert('Formulario enviado correctamente.');
+          document.getElementById('denunciasForm').reset();
+          const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+          modal.hide();
+      });
+  </script>
 </body>
 </html>

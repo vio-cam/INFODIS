@@ -1,67 +1,25 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js'
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+import { app } from "../js/config.js"; 
+const auth = getAuth(app); 
 
-import {sendEmailVerification, getAuth, signInWithPopup, 
-    createUserWithEmailAndPassword, signInWithEmailAndPassword,  
-    onAuthStateChanged, signInWithPopup, loginWithGoogle} from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js'   
-    import { GoogleAuthProvider,  } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js"
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector("form"); 
 
-const firebaseConfig = {
-  apiKey: "AIzaSyD-dMSEicsuDX5J2OpeQKQHjoTyfrpzIW4",
-  authDomain: "hackaton-d3eab.firebaseapp.com",
-  databaseURL: "https://hackaton-d3eab-default-rtdb.firebaseio.com",
-  projectId: "hackaton-d3eab",
-  storageBucket: "hackaton-d3eab.firebasestorage.app",
-  messagingSenderId: "445047460698",
-  appId: "1:445047460698:web:99991b23149304540ad963",
-  measurementId: "G-KRWTPL64K6"
-};
+    loginForm.addEventListener("submit", async (event) => {
+        event.preventDefault(); 
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+        const email = document.getElementById("emaillog").value;
+        const password = document.getElementById("passwordlog").value;
 
-
-login.addEventListener('click', (e) => {
-    var email = document.getElementById('emaillog').value;
-    var password = document.getElementById('passwordlog').value;
-
-    signInWithEmailAndPassword(auth, email, password).then(cred => {
-        alert("Usuario logueado");
-        console.log(cred.user)
-    }).catch(error => {
-        const errorCode = error.code;
-
-        if(errorCode == 'auth/invalid-email')
-            alert('El correo no es válido');
-        else if(errorCode == 'auth/user-disabled')
-            alert('El usuario ha sido deshabilitado');
-        else if(errorCode == 'auth/user-not-found')
-            alert('El usuario no existe');
-        else if(errorCode == 'auth/wrong-password')
-            alert('Contraseña incorrecta');
-
-    })
-})
-
-cerrar.addEventListener('click', (e) => {
-    auth.signOut().then(() =>{
-        alert('Sesión cerrada');
-    }).catch((error) => {
-        alert('Error al cerrar sesión');
-    });
-})
-
-auth.onAuthStateChanged(user => {
-    if (user){
-        console.log("Usuario activo");
-        var email = user.emailVerified;
-        if(email){  
-            window.open("https://www.google.com/")
-
-        }else{
-            auth.signOut();
+        try {
+            const userCredential = await signInWithEmailAndPassword(auth, email, password);
+            console.log("Usuario aceptado:", userCredential.user);
+            window.location.href = "../html/cv.html"; 
+        } catch (error) {
+            console.error("Error al iniciar sesión:", error.message);
+            alert("Error: " + error.message); 
         }
-    }else{
-        console.log("Usuario inactivo");
-    }
-})
+    });
+});
+
+

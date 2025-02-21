@@ -83,20 +83,27 @@ function mostrarInstituciones(instituciones) {
     const $cardContainer = $("#card-container");
     $cardContainer.empty();
 
-    instituciones.forEach(inst => {
+    instituciones.forEach((inst, index) => {
         const card = `
             <div class="card">
                 ${inst.imagen ? `<img src="${inst.imagen}" alt="${inst.nombre}" class="card-img">` : ""}
-                <h3>${inst.nombre}</h3>
-                <p><strong>Dirección:</strong> ${inst.direccion || "No disponible"}</p>
-                <p><strong>Sitio Web:</strong> ${inst["sitio web"] ? `<a href="${inst["sitio web"]}" target="_blank">${inst["sitio web"]}</a>` : "No disponible"}</p>
-                <p><strong>Categoría:</strong> ${inst.categoria || "No disponible"}</p>
-                <p><strong>Subcategoría:</strong> ${inst.subcategoria || "No disponible"}</p>
-                <p><strong>Nivel de Acesibilidad:</strong> ${inst["Nivel de Acesibilidad"] || "No disponible"}</p>
-                <p><strong>Detalles del lugar:</strong> ${inst["Detalles del lugar"] || "No disponible"}</p>
+                <div class="card-content">
+                    <h3>${inst.nombre}</h3>
+                    <p style="text-align: left;"><strong>Dirección:</strong> ${inst.direccion || "No disponible"}</p>
+                    <p style="text-align: left;><strong>Sitio Web:</strong> ${inst["sitio web"] ? `<a href="${inst["sitio web"]}" target="_blank">${inst["sitio web"]}</a>` : "No disponible"}</p>
+                    <p style="text-align: left;><strong>Categoría:</strong> ${inst.categoria || "No disponible"}</p>
+                    <p style="text-align: left;><strong>Subcategoría:</strong> ${inst.subcategoria || "No disponible"}</p>
+                    <p><strong>Nivel de Accesibilidad:</strong> ${inst["Nivel de Acesibilidad"] || "No disponible"}</p>
+                    <button type="button" style="background-color: #FCCB00;
+                    color: #e5f6f8;border: 2px solid #FCCB00" class="btn btn-lg btn-danger btn-p" data-bs-toggle="popover" data-bs-title="${inst.nombre}" data-bs-content="dESCRIPCION DETALLADAC${inst["Detalles del lugar"] || "No disponible"}:">VER MAS</button>
+                </div>
             </div>
         `;
         $cardContainer.append(card);
     });
+
+    // ✅ Inicializar los popovers después de insertar las tarjetas
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    popoverTriggerList.forEach(triggerEl => new bootstrap.Popover(triggerEl));
 }
 

@@ -1,0 +1,56 @@
+.custom-card {
+    border: 2px solid #00485E;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    padding-bottom: 345px;
+  }
+
+  .profile-thumbnail img {
+    border: 5px solid #00485E;
+    border-radius: 50%;
+  }
+
+  .botn-p a ,.botn-p button{
+    text-decoration: none;
+    background-color: #FCCB00;
+    border-color: #FCCB00;
+    border: 2px solid #8f781c;
+    padding: 10px 20px;
+  }
+
+
+  .form-container {
+    border: 2px solid #00485E;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .form-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .custom-card {
+    flex: 0.5;
+  }
+
+  .bon button{
+    background-color: #FCCB00;
+    color: #f8f9fa;
+    border-radius: 7px;
+    border: 2px solid #8f781c;
+  }
+
+  body{
+    font-family: Poppins;
+  }

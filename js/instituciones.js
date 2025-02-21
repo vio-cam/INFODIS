@@ -92,28 +92,41 @@ function buscarInstitucion() {
   function mostrarInstituciones(instituciones) {
     let $cardContainer = $("#card-container");
     $cardContainer.empty();
-  
+
     instituciones.forEach(inst => {
         let card = `
             <div class="card">
                 <h3>${inst.nombre}</h3>
-                <p><strong>Teléfono:</strong> ${inst.telefono}</p>
-                <p><strong>Dirección:</strong> ${inst.direccion}</p>
-                <p><strong>Correo:</strong> ${inst.correo}</p>
-                <p><strong>Sitio Web:</strong> <a href="${inst["sitio web"]}" target="_blank">${inst["sitio web"]}</a></p>
                 <p><strong>Área de atención:</strong> ${inst["area de atencion"]}</p>
                 <p><strong>Departamento:</strong> ${inst.departamento}</p>
                 <p><strong>Provincia:</strong> ${inst.provincia}</p>
                 <p><strong>Distrito:</strong> ${inst.distrito}</p>
                 <p><strong>Fecha de registro:</strong> ${inst["fecha de registro"]}</p>
                 <p><strong>Última actualización:</strong> ${inst["ultima actualizacion"]}</p>
+                <div class="caja">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Tel: ${inst.telefono}" >
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Dirección: ${inst.direccion}">
+                        <i class="fa-solid fa-street-view"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Correo: ${inst.correo ?? 'No disponible'}">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                    <a href="${inst["sitio web"]}" target="_blank">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
             </div>
         `;
-  
+
         $cardContainer.append(card);
     });
-    
-  }
+
+    // ✅ Inicializar los popovers después de insertar las tarjetas
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    popoverTriggerList.forEach(triggerEl => new bootstrap.Popover(triggerEl));
+}
   
   // Ocultar instrucciones cuando se presiona el botón de búsqueda
   document.querySelector('button[onclick="buscarInstitucion()"]').addEventListener('click', function() {

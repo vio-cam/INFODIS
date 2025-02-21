@@ -1,114 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.navegador {
-    margin-bottom: 70px; /* Espacio entre el navbar y el contenido */
-}
-
-header.navegador {
-    background-color: #ffffff; /* Fondo blanco */
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-/* Sombra cuando el usuario baja */
-header.navegador.scrolled {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    background-color: #d1eef2; /* Un poco más oscuro para dar efecto de profundidad */
-}
-  
-  .logo-infodis{
-    background-color: #ffff;
-    position: relative;
-    height: 60px;
-    width: auto;
-    margin-left: 30px;
-  }
-  
-  .nav-bar nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-bar nav ul li {
-    position: relative;
-    padding: 10px 20px;
-    color: #ffffff;
-  }
-  
-  .nav-bar nav ul li a {
-    color: #00485e; /* Azul oscuro */
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .nav-bar nav ul li:hover {
-    background-color: #00485e1a; /* Un tono más claro al pasar el mouse */
-}
-  
-  .nav-bar nav ul li > a {
-    font-weight: bold;
-  }
-  
-  /* Submenú */
-  .nav-bar nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 5px;
-    min-width: 150px;
-  }
-  
-  .nav-bar nav ul li:hover > ul {
-    display: block;
-    border-radius: 10px;
-  }
-  
-  .nav-bar nav ul li ul li {
-    padding: 10px;
-  }
-  
-  .nav-bar nav ul li ul li a {
-    color: #00485e;
-  }
-  
-  .nav-bar nav ul li ul li a:hover {
-    background-color: #00485e1a;
-  }
-
-/* Estilos del contenedor */
-.nav-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-
-
-
-/* Estilos del contenedor */
-.nav-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -147,7 +38,15 @@ section {
 .not {
     width: 100%;
     min-height: 440px;
-    background-image: url("../assets/img/img3\ copy.jpg"); /* Corregir espacio en el nombre */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../assets/img/img3\ copy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ /* Corregir espacio en el nombre */
     background-size: cover; /* Ajusta la imagen para cubrir todo el header */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -211,25 +110,29 @@ section {
 
 
 .post-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: var(--bg-color);
     box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
     padding: 15px;
     border-radius: 0.5rem;
-    min-height: 350px;  /* Tamaño mínimo para evitar cambios en el layout */
-    height: auto;
+    min-height: 400px; /* Ajusta según necesidad */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%; /* Hace que todas las tarjetas tengan la misma altura */
 }
 
-/* Imagen de los posts */
+
+
 .post-img {
     width: 100%;
-    height: 200px;
+    height: 200px; /* Ajusta según necesites */
     object-fit: cover;
     object-position: center;
-    border-radius: 0.5rem;
+    display: block;
 }
+
 
 /* Categoría del post */
 .category {
@@ -268,6 +171,8 @@ section {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+
 
 .footer{
     display: flex;
@@ -425,7 +330,7 @@ section {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    margin: 20px 150px ;
+    margin: 20px 250px ;
 }
 
 #formComentario input,
@@ -438,11 +343,12 @@ section {
 
 #formComentario button {
     padding: 10px;
-    background: var(--second-color);
+    background-color: #ffd62f;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 #formComentario button:hover {
@@ -468,3 +374,7 @@ section {
     font-size: 0.8rem;
     color: gray; /* Color para la fecha del comentario */
 }
+
+body{
+    font-family: Poppins;
+  }

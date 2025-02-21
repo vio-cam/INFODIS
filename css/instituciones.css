@@ -1,59 +1,4 @@
-/* Estilos generales */
-.navbar {
-    background-color: #e5f6f8;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .navbar.scrolled {
-    background-color: #d1eef2;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .logo-infodis {
-    height: 50px;
-    width: auto;
-    background-color: white;
-    border-radius: 6px;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #0c0c0c;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-    background-color: #2b7a78;
-    color: #ffffff;
-  }
-  
-  .dropdown-menu {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    padding: 5px 0;
-  }
-  
-  .dropdown-item {
-    color: #333333;
-    padding: 10px 15px;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #2b7a78;
-    color: #ffffff;
-  }
-  
-  /* Responsive */
+  /* Responsive navbar*/
   @media (max-width: 768px) {
     .navbar-toggler {
       width: 45px;
@@ -103,7 +48,6 @@
     }
   }
 
-
 body {
     font-family: 'Questrial', sans-serif;
     margin: 0;
@@ -134,10 +78,6 @@ body {
     margin: 0; 
     color: #3d1f0e;
 }
-
-
-
-
 
 
 h2, p{
@@ -209,79 +149,6 @@ label{
 }
 
 
-
-.contenedor-filtro {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #e7dc77;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#formulario-filtro-ingredientes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-#formulario-filtro-ingredientes div {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 200px;
-}
-
-#formulario-filtro-ingredientes label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-#formulario-filtro-ingredientes input,
-#formulario-filtro-ingredientes select {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    max-width: 220px;
-    background-color: #fff;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#formulario-filtro-ingredientes input:focus,
-#formulario-filtro-ingredientes select:focus {
-    border-color: #d6dd71;
-    outline: none;
-}
-
-#formulario-filtro-ingredientes button {
-    padding: 12px 25px;
-    background-color: #afa22d;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-#formulario-filtro-ingredientes button:hover {
-    background-color: #a7551b;
-}
-
-#formulario-filtro-ingredientes button:active {
-    background-color: #8a4c1b;
-}
-
-
-
-
-
 .main-content {
     padding: 20px;
 }
@@ -294,6 +161,7 @@ label{
 }
 
 .card {
+    padding: 5px 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s;
@@ -338,41 +206,55 @@ label{
 }
 
 
-@media (max-width: 1200px) {
-    .card {
-        flex: 1 1 calc(33.33% - 20px); 
-    }
+.caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px;
 }
 
-@media (max-width: 800px) {
-    .card {
-        flex: 1 1 calc(50% - 20px); 
-    }
+.caja button,
+.caja a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #00485E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-@media (max-width: 500px) {
-    .card {
-        flex: 1 1 100%; 
-    }
+.caja button:hover,
+.caja a:hover {
+    background-color: #FCCB00;
+    transform: scale(1.2);
 }
 
+.caja i {
+    font-size: 22px;
+}
 
+.card p {
+    text-align: left;
+    font-size: 14px;
+    margin: 5px 0;
+    color: #2b1609;
+}
 
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .caja {
+        flex-wrap: wrap;
+    }
+}
 
 
 .instrucciones-filtro {
@@ -429,7 +311,167 @@ label{
 }
 
 
+.backgroud-hero-banner {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://www.defensoria.gob.pe/wp-content/uploads/2022/05/Loreto_accesibilidad.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 800px;
+    padding: 0 15px; 
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 30px 20px; 
+    }
+}
+
+.container-hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px; 
+    max-width: 1200px; 
+    width: 100%;
+    padding: 0 40px; 
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.column-1 {
+    flex: 2;
+}
+
+.column-1 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 80%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 36px;
+    }
+}
+
+.column-1 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.7; 
+    width: 80%;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.column-2 { 
+    flex: 1;
+}
+
+.container-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: 'Poppins';
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+
+        select,
+        input[type="date"] {
+            padding: 18px 150px;
+            font-size: 14px;
+            border: 1px solid #ffd62f;
+            border-radius: 5px;
+            font-family: 'Poppins';
+        }
+
+        .btn-search {
+            background-color: #FCCB00;
+            color: white;
+            padding: 15px 0;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 5px;
+            border-color: #FCCB00;
+        }
+
+        select:focus
+        input[type="date"]:focus {
+            border-color: #fff ;
+            outline: none;
+        }
+
+
+    }
+
+}
+
+@media(max-width: 760px) {
+
+    .column-1{
+        flex: auto;
+
+        h1{
+            font-size: 36px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .container-form {
+        width: 100%;
+
+        .form{
+            .title{
+                font-size: 23px;
+                margin-bottom: 10px;
+            }
+
+            .btn-search {
+                font-size: 14px;
+            }
+        }
+    }
+}
 
 
 /*FOOTER*/
@@ -453,4 +495,25 @@ label{
   .footer-nav ul li a {
     color: #2b1609;
     text-decoration: none;
+  }
+
+  .corr{
+    text-decoration: none;
+    color: #e7e7e7;
+  }
+
+  .corr:hover{
+    color: #555e00;
+  }
+
+  .boton-icon a{
+    color: #FCCB00;
+}
+
+.boton-icon{
+    color: #FCCB00;
+}
+
+body{
+    font-family: Poppins;
   }

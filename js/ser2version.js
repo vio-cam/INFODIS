@@ -1,13 +1,4 @@
-//para habilitar la ventana lateral
-document.getElementById('openPanel').addEventListener('click', function() {
-    document.getElementById('sidePanel').classList.add('active');
-    document.body.classList.add('no-scroll'); // Evita que el fondo se desplace
-});
 
-document.getElementById('closePanel').addEventListener('click', function() {
-    document.getElementById('sidePanel').classList.remove('active');
-    document.body.classList.remove('no-scroll'); // Vuelve a permitir el scroll
-});
 //formulario
 document.querySelector("form").addEventListener("submit", function(event) {
     let nombre = document.getElementById("nombre").value;

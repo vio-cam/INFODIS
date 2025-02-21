@@ -1,67 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 20px;
+  background-image: url(https://i.pinimg.com/736x/bd/8d/22/bd8d2293e29a93f41fca0ccd1799d980.jpg);
+  background-size: cover;      /* Ajusta la imagen para que cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen mientras se desplaza la página */
 }
 
-/* Estilos generales */
-.navbar {
-  background-color: #e5f6f8;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.navbar.scrolled {
-  background-color: #d1eef2;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.logo-infodis {
-  height: 50px;
-  width: auto;
-  background-color: white;
-  border-radius: 6px;
-}
-
-.navbar-nav .nav-link {
-  color: #0c0c0c;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  background-color: #2b7a78;
-  color: #ffffff;
-}
-
-.dropdown-menu {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  padding: 5px 0;
-}
-
-.dropdown-item {
-  color: #333333;
-  padding: 10px 15px;
-}
-
-.dropdown-item:hover {
-  background-color: #2b7a78;
-  color: #ffffff;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -114,13 +59,12 @@ body {
 }
 
 .form-container {
-  margin-top: 100px;
   background-color: #ffffff;
   width: 50%;
   padding: 30px;
+  margin: 80px 25% ;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
 }
 
 .form-container h2 {
@@ -246,4 +190,37 @@ button {
 .footer-nav ul li a {
   color: #2b1609;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .seccion, .taller-section {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .contenido, .taller-content {
+    flex: 1;
+    padding: 20px;
+  }
+  .seccion img, .taller-images img {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .seccion img, .taller-images img {
+    max-width: 90%;
+  }
+  .taller-section {
+    flex-direction: column;
+  }
+  .inscribete-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+
+body{
+  font-family: Poppins;
 }

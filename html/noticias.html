@@ -6,99 +6,119 @@
     <title>Noticias</title>
     <link rel="stylesheet" href="../css/noticias.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class="navegador">
-        <div class="nav-bar">
-            <nav>
-                <ul>
-                  <a href="../index.html"><img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" class="logo-infodis"></a>
-                  <li>
-                    <a href="#">Recursos</a>
-                    <ul> 
-                      <li><a href="../instituciones.html">Instituciones</a></li>
-                      <li><a href="#">Agenda</a></li>
-                      <li><a class="dropdown-item" href="../html/lugares.html">Espacios adaptados</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="../html/servicios.html">Servicios</a>
-                  </li>
-                  <li><a href="../html/noticias.html">Noticias</a></li>
-                  <li><a href="../html/contacto.html">Contacto</a></li>
-                  <li><a href="../html/login.html">Cuenta</a></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" class="logo-infodis" alt="Logo Infodis">
+          </a>
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <span class="menu-icon">☰</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recursos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../html/instituciones.html">Instituciones</a></li>
+                  <li><a class="dropdown-item" href="../html/agenda.html">Agenda</a></li>
                 </ul>
-            </nav>
-          </div> 
-      </header>
-
-<section class="not" id="not">
-    <div class="not-text container">
-        <h2 class="not-title">Noticias</h2>
-        <span class="not-subtitle">Informate con nosotros</span>
-    </div>
-</section>
-
-<div class="post-filter container">
-    <span class="filter-item active-filter" data-filter="all">Todo</span>
-    <span class="filter-item" data-filter="oportunidades">Oportunidades</span>
-    <span class="filter-item" data-filter="articulos">Articulos</span>
-</div>
-
-<section class="post container" id="post-container">
+              </li>
+              <li class="nav-item"><a class="nav-link active" href="../html/servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/noticias.html">Noticias</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/contacto.html">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/login.html">Cuenta</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const toggleButton = document.querySelector('.navbar-toggler');
+          const navbarNav = document.getElementById('navbarNavDropdown');
+        
+          toggleButton.addEventListener('click', () => {
+            navbarNav.classList.toggle('show');
+          });
+        
+          window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+          });
+        });
+      </script>
 
-    <div class="post-box oportunidades">
-        <img src="../assets/img/post-2.jpg" alt="" class="post-img">
-        <h2 class="category">Oportunidades</h2>
-        <a href="post-page.html" class="post-title">Curso de Formación para la Inserción laboral</a>
-        <span class="post-date">30 Mar 2023</span>
-        <p class="post-description">Inscríbete GRATIS en nuestro Curso de Formación para la inserción laboral de personas con discapacidad y desarrolla tus habilidades en el mundo laboral.</p>
+    <section class="not" id="not">
+        <div class="not-text container">
+            <h2 class="not-title">Noticias</h2>
+            <span class="not-subtitle">Informate con nosotros</span>
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">Todo</span>
+        <span class="filter-item" data-filter="oportunidades">Oportunidades</span>
+        <span class="filter-item" data-filter="articulos">Articulos</span>
     </div>
 
+    <section class="post container" id="post-container">
+        
 
-    <div class="post-box oportunidades">
-        <img src="../assets/img/post-4.jpg" alt="" class="post-img">
-        <h2 class="category">Oportunidades</h2>
-        <a href="post-page.html" class="post-title">Engie Energía Perú</a>
-        <span class="post-date">24 Mar 2023</span>
-        <p class="post-description">
-        📌 Asistente de Administración y Servicios Generales
-        📌 Tienes toda información en el siguiente link: https://www.incluyeme.com.pe/.../asistente-de.../</p>
-    </div>
+        <div class="post-box oportunidades">
+            <img src="../assets/img/post-2.jpg" alt="" class="post-img">
+            <h2 class="category">Oportunidades</h2>
+            <a href="post-page.html" class="post-title">Curso de Formación para la Inserción laboral</a>
+            <span class="post-date">30 Mar 2023</span>
+            <p class="post-description">Inscríbete GRATIS en nuestro Curso de Formación para la inserción laboral de personas con discapacidad y desarrolla tus habilidades en el mundo laboral.</p>
+        </div>
 
-    
-    <div class="post-box oportunidades">
-        <img src="../assets/img/post-4.jpg" alt="" class="post-img">
-        <h2 class="category">Oportunidades</h2>
-        <a href="post-page.html" class="post-title">Natura Perú</a>
-        <span class="post-date">24 Mar 2023</span>
-        <p class="post-description">
-        📌 Laboratorio de inclusión – Natura&Co 2023
-        📌 Tienes toda información en el siguiente link: https://www.incluyeme.com.pe/.../laboratorio-de.../</p>
-    </div>
-</section>
+
+        <div class="post-box oportunidades">
+            <img src="../assets/img/post-4.jpg" alt="" class="post-img">
+            <h2 class="category">Oportunidades</h2>
+            <a class="post-title" onclick="">Engie Energía Perú</a>
+            <span class="post-date">24 Mar 2023</span>
+            <p class="post-description">
+            📌 Asistente de Administración y Servicios Generales
+            📌 Tienes toda información en el siguiente link: https://www.incluyeme.com.pe/.../asistente-de.../</p>
+        </div>
+
+        
+        <div class="post-box oportunidades">
+            <img src="../assets/img/post-4.jpg" alt="" class="post-img">
+            <h2 class="category">Oportunidades</h2>
+            <a href="post-page.html" class="post-title">Natura Perú</a>
+            <span class="post-date">24 Mar 2023</span>
+            <p class="post-description">
+            📌 Laboratorio de inclusión – Natura&Co 2023
+            📌 Tienes toda información en el siguiente link: https://www.incluyeme.com.pe/.../laboratorio-de.../</p>
+        </div>
+    </section>
 
 
     <footer style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f8f8f8; border-top: 1px solid #e7e7e7;">
-        <div style="flex: 1;">
-            <p style="margin: 0;">© 2025 Hackher. Todos los derechos reservados.</p>
-            <p style="margin: 0;"><a href="../html/privacidad.html">Política de privacidad</a> | <a href="../html/terminos.html">Términos y condiciones</a></p>
-        </div>
-        <div style="flex: 1; text-align: right;">
-            <img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" alt="Logo de Tu Empresa" style="height: 50px;">
-        </div>
-        <div class="footer container">
-            <div class="social">
-                <a href="https://www.facebook.com/infodisperu/"><i class="bi bi-facebook"></i></a>
-                <a href="https://twitter.com/infodisperu"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.linkedin.com/company/grupo-fundades-peru/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://www.youtube.com/user/GFundades"><i class="bi bi-youtube"></i></a>
-            </div>
-        </div>
-    </footer>
+      <div style="flex: 1;">
+          <p style="margin: 0;">© 2023 Tu Empresa. Todos los derechos reservados.</p>
+          <p style="margin: 0;"><a href="html/privacidad.html">Política de privacidad</a> | <a href="html/terminos.html">Términos y condiciones</a></p>
+      </div>
+      <div class="social">
+          <a href="https://www.facebook.com/infodisperu/"><i class="bi bi-facebook" font-size="15px" ></i></a>
+          <a href="https://twitter.com/infodisperu"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/grupo-fundades-peru/"><i class="bi bi-linkedin"></i> </a>
+          <a href="https://www.youtube.com/user/GFundades"><i class="bi bi-youtube" style="font-size: 20px;"></i></a>
+          <p style="margin: 0;"><a href="https://www.google.com/maps/place/Jr.+Alfredo+Silva+180,+Barranco+15063/@-12.155262,-77.023144,16z/data=!4m5!3m4!1s0x9105b7925cf938af:0x64a15cb7e048ce75!8m2!3d-12.1552622!4d-77.023144?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">Barranco - Lima, Perú 15063</a> | <a href=""></a>infodis@fundades.org</p>
+      </div>
+      <div style="flex: 1; text-align: right;">
+          <img src="https://infodisperu.com/images/logo.png?dbb595780e34a8126e96a0bd58fa941d" alt="Logo de Tu Empresa" style="height: 50px;">
+      </div>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type = "module"src="../js/noticas.js"></script>
 </body>
 </html>

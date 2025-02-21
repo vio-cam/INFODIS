@@ -1,59 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Estilos generales */
-.navbar {
-    background-color: #e5f6f8;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .navbar.scrolled {
-    background-color: #d1eef2;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .logo-infodis {
-    height: 50px;
-    width: auto;
-    background-color: white;
-    border-radius: 6px;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #0c0c0c;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-    background-color: #2b7a78;
-    color: #ffffff;
-  }
-  
-  .dropdown-menu {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    padding: 5px 0;
-  }
-  
-  .dropdown-item {
-    color: #333333;
-    padding: 10px 15px;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #2b7a78;
-    color: #ffffff;
-  }
   
   /* Responsive */
   @media (max-width: 768px) {
@@ -218,13 +164,14 @@
         }
 
         .btn-search {
-            background-color: #00485e;
-            color: #ffd62f;
+            background-color: #FCCB00;
+            color: white;
             padding: 15px 0;
             font-size: 16px;
             font-weight: 500;
             cursor: pointer;
             border-radius: 5px;
+            border-color: #FCCB00;
         }
 
         select:focus
@@ -299,30 +246,34 @@
 }
 
 
-
-.card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center;
 }
 
-.card-content {
-    padding: 15px;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     text-align: center;
+    min-height: 300px; /* Para que todas las tarjetas tengan la misma altura */
 }
 
-.card-title {
-    margin: 10px 0;
+.card-img {
+    width: 100%;
+    height: 180px; /* Tamaño fijo */
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.card-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
 .instrucciones-filtro {
     background-color: #F9ECC9; /* Fondo claro */
@@ -378,10 +329,31 @@
 }
 
 
+.oculto {
+    display: none;
+}
+.detalles {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
 
+#btn-p{
+    background-color: #FCCB00;
+    color: #e5f6f8;
+}
 
 /*FOOTER*/
 
 .main-content {
     flex: 1; /* Esto asegura que el contenido principal ocupe todo el espacio disponible */
 }
+
+@media(max-width: 990){
+    
+}
+
+body{
+    font-family: Poppins;
+  }

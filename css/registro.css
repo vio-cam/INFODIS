@@ -1,65 +1,13 @@
 /* Estilos generales */
 body {
 	font-family: Arial, sans-serif;
-	font-size: 16px;
-	background-color: #F2F2F2;
-	color: #333;
-}
-
-/* Estilos generales */
-.navbar {
-	background-color: #e5f6f8;
-	padding: 10px 20px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 100;
-	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	background-image: url(https://i.pinimg.com/736x/bd/8d/22/bd8d2293e29a93f41fca0ccd1799d980.jpg);
+	background-size: cover;      /* Ajusta la imagen para que cubra todo el fondo */
+	background-position: center; /* Centra la imagen */
+	background-repeat: no-repeat; /* Evita que la imagen se repita */
+	background-attachment: fixed; /* Fija la imagen mientras se desplaza la página */
   }
   
-  .navbar.scrolled {
-	background-color: #d1eef2;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .logo-infodis {
-	height: 50px;
-	width: auto;
-	background-color: white;
-	border-radius: 6px;
-  }
-  
-  .navbar-nav .nav-link {
-	color: #0c0c0c;
-	font-weight: bold;
-	font-size: 16px;
-	padding: 8px 12px;
-	border-radius: 6px;
-	transition: background-color 0.2s ease, color 0.2s ease;
-  }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-	background-color: #2b7a78;
-	color: #ffffff;
-  }
-  
-  .dropdown-menu {
-	background-color: #ffffff;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-	padding: 5px 0;
-  }
-  
-  .dropdown-item {
-	color: #333333;
-	padding: 10px 15px;
-  }
-  
-  .dropdown-item:hover {
-	background-color: #2b7a78;
-	color: #ffffff;
-  }
   
   /* Responsive */
   @media (max-width: 768px) {
@@ -118,14 +66,7 @@ h2 {
 	color: #444;
 }
 
-form {
-	max-width: 500px;
-	margin: 0 auto;
-	background-color: #fff;
-	padding: 40px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-}
+
 
 label {
 	display: block;
@@ -218,5 +159,31 @@ main {
 	padding: 20px;
 	background-color: #f8f8f8;
 	border-top: 1px solid #e7e7e7;
-	margin-top: 230px; /* Asegúrate de que el footer esté al final */
+	margin-top: 310px; /* Asegúrate de que el footer esté al final */
+  }
+
+  .contenedor {
+	width: 300px;
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+.formularios {
+	display: flex;
+	width: 600px;
+	transition: transform 0.5s ease-in-out;
+}
+.formulario {
+	width: 300px;
+	padding: 20px;
+	background: aliceblue;
+	border-radius: 10px;
+}
+.botones {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+body{
+    font-family: Poppins;
   }
